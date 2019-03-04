@@ -1,12 +1,9 @@
 <html>
 
 <head>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='jquery-3.3.1.min.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
-
-
 </head>
 <style>
     * {
@@ -14,25 +11,26 @@
     }
 
     body {
-        width: 100%;
-        background-color: #D7D2B7;
-        display: flex;
-        justify-content: center;
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
     }
 
     /* Slideshow container */
     .slideshow-container {
-        max-width: 500px;
+        max-width: 1000px;
         position: relative;
-        width: 100%;
+        margin: auto;
         display: flex;
-        justify-content: center;
+        width: 100%;
 
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
     }
 
     /* Next & previous buttons */
@@ -42,8 +40,8 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: -22px;
         padding: 16px;
+        margin-top: -22px;
         color: white;
         font-weight: bold;
         font-size: 18px;
@@ -58,16 +56,10 @@
         border-radius: 3px 0 0 3px;
     }
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
     /* Caption text */
     .text {
         color: #f2f2f2;
-        font-size: 25px;
+        font-size: 15px;
         padding: 8px 12px;
         position: absolute;
         bottom: 8px;
@@ -78,53 +70,53 @@
     }
 
     /* Number text (1/3 etc) */
-
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
 
     /* The dots/bullets/indicators */
-
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
 
     .active,
     .dot:hover {
         background-color: #717171;
     }
 
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
 
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
         }
     }
 
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    /*da al css bta3 al swar aly btt7at gwa al slide show */
-    .slideimg {
-        margin-top: 25px;
+    #whole-page {
         width: 100%;
-        height: 40%;
-        border: #717171;
+        display: flex;
+        flex-direction: column;
 
+        align-items: center;
 
+    }
+
+    #para {
+        margin: 0%;
+        color: beige;
     }
 
     /*dah al css bta3 al buttons kolohom */
@@ -133,6 +125,7 @@
         display: flex;
 
         flex-direction: column;
+        width: 74%;
     }
 
     /*dah css bta3 awl button lwa7do */
@@ -172,56 +165,53 @@
         margin-top: 60;
         border: 1px solid #909FB4;
     }
-
-    #wholepage {
-
-        width: 100%;
-
-    }
 </style>
-<!--ana ast5dmt background wa7da ll-application kolo we 7asetha a7san we lo 7d 3ndo wa7da a7san y7otha-->
 
 <body background=" images/backimg.jpg">
-    <div id="wholepage">
-        <div id="contain">
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+    <div id="whole-page">
+        <h1 style="font-size:70px; color: beige; margin-bottom: -6px; margin-top: 16px;"> الفلاسفة</h1>
+        <p id="para" style="font-size:40px;">أفضل الفلاسفة</p>
+        <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-
-                    <img class="slideimg" src="images\tomaalakony.jpg">
-                    <div class="text">توما الاكوني كان من أشهر فلاسفة العصصور الوسطي</div>
-                </div>
-
-                <div class="mySlides fade">
-
-                    <img class="slideimg" src="images\fransisbeacon.jpg">
-                    <div class="text">فرانسيس بيكون هو افضل الفلاسفة </div>
-                </div>
-
-                <div class="mySlides fade">
-
-                    <img class="slideimg" src="images\georgeberkly.jpg">
-                    <div class="text">جورج بيركلي كان فيلسوف حلو</div>
-                </div>
-                <div class="mySlides fade">
-
-                    <img class="slideimg" src="images\david-hume.jpg">
-                    <div class="text">توما الاكوني كان من أشهر فلاسفة العصصور الوسطي</div>
-                </div>
-                <div class="mySlides fade">
-
-                    <img class="slideimg" src="images\roso.jpg">
-                    <div class="text">توما الاكوني كان من أشهر فلاسفة العصصور الوسطي</div>
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images\tomaakony.jpg" style="width:100%">
+                <div class="text">الفيلسوف توما الاكوني</div>
             </div>
-            <!-- Next and previous buttons -->
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images\fransisbecon.jpg" style="width:100%">
+                <div class="text">الفيلسوف فرانسيس بيكون</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images\georgeberkly.jpg" style="width:100%">
+                <div class="text">الفيلسوف جورج بيركلي</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images\davidhumeland.jpg" style="width:100%">
+                <div class="text">الفيلسوف دافيد هيوم</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images\roso.jpg" style="width:100%">
+                <div class="text">الفيلسوف روسو</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>
         <br>
 
-        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
         <div id="key">
             <!-- to make a hyperlink between the pages by using a onclick order -->
@@ -242,29 +232,36 @@
         </div>
     </div>
 
-
 </body>
-
-
-
 <script>
 
-    var slideIndex = 0;
-    showSlides();
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-    function showSlides() {
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        dots[slideIndex - 1].className += " active";
     }
 
-// ya gd3an l7d delwa2ty al button bta3 al home we al button bta3 al falasfa sha9aleen we by7awlo lba3d..
 </script>
 
 </html>
