@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='jquery-3.3.1.min.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
-    <script type="text/javascript" src="cordova.js"></script>
 </head>
 <style>
     * {
@@ -16,13 +15,10 @@
         margin: 0;
         width: 100%;
 
-
     }
 
     .mySlides {
-        display: none;
-        height: 312px;
-        
+        display: none
     }
 
     img {
@@ -36,7 +32,6 @@
         margin: auto;
         display: flex;
         width: 100%;
-
     }
 
     /* Next & previous buttons */
@@ -72,7 +67,7 @@
         width: 100%;
         text-align: center;
         font-family: 'Amiri';
-        font-size: 120%;
+        font-size: 80%;
     }
 
     /* Number text (1/3 etc) */
@@ -116,7 +111,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     #para {
@@ -126,9 +120,7 @@
 
     /*dah al css bta3 al buttons kolohom */
     #key {
-
         display: flex;
-
         flex-direction: column;
         width: 74%;
     }
@@ -137,101 +129,99 @@
     #but1 {
         width: 100%;
         height: 10%;
-        background-color: #096E71;
+        background-color: rgba(182, 85, 0, 0.596);
         color: white;
         margin-top: 30px;
-        border: 1px solid #909FB4;
+        border: 1px solid #ffffff54;
         font-family: 'Amiri';
         font-size: 190%;
-
+        border-radius: 5px;
     }
 
     /*dah css bta3 tany button lwa7do */
     #but2 {
         width: 100%;
         height: 10%;
-        background-color: #096E71;
+        background-color: rgba(182, 85, 0, 0.596);
         color: white;
-        margin-top: 60px;
-        border: 1px solid#909FB4;
+        margin-top: 30px;
+        border: 1px solid #ffffff54;
         font-family: 'Amiri';
         font-size: 190%;
+        border-radius: 5px;
     }
 
     /*dah css bta3 talet button lwa7do */
     #but3 {
         width: 100%;
         height: 10%;
-        background-color: #096E71;
+        background-color: rgba(182, 85, 0, 0.596);
         color: white;
-
+        margin-top: 30px;
+        border: 1px solid #ffffff54;
         font-family: 'Amiri';
         font-size: 190%;
-        margin-top: 60;
-        border: 1px solid #909FB4;
+        border-radius: 5px;
     }
-    #img-container{
-display: flex;
-flex-direction: column;
-width:100%;
-height: 312px;
-    }
-    #img-box{
-width: 100%;
-height: 312px;
+    #total{
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        width: 75%;
     }
 </style>
 
 <body background=" images/background.jpg">
     <div id="whole-page">
-        <h1 style=" color: rgb(213, 227, 228); margin-bottom: -47px; margin-top: 16px; font-family: Amiri; font-size: 89px;"> الفلاسفة</h1>
-        <p id="para" style="font-size:40px; margin-bottom: 20px; margin-top: 20px;font-family: Amiri; ">أفضل الفلاسفة</p>
-        <div class="slideshow-container">
-            <div id="img-container">
-                <div id="img-box">
+        <h1 style="font-size:70px; color: beige; margin-bottom: -6px; margin-top: 16px;"> الفلاسفة</h1>
+        <p id="para" style="font-size:40px;">أفضل الفلاسفة</p>
+        <div id="total">
+            <div class="slideshow-container">
+
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="images\tomaakony.jpg" style="width:100%;height: 300px;border-radius: 3%; ">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images\tomaakony.jpg" style="width:100%">
                     <div class="text">الفيلسوف توما الاكوني</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="images\fransisbecon.jpg" style="width:100%;height: 300px; border-radius: 3%; ">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images\fransisbecon.jpg" style="width:100%">
                     <div class="text">الفيلسوف فرانسيس بيكون</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="images\georgeberkly.jpg" style="width:100%;height: 300px; border-radius: 3%; ">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images\georgeberkly.jpg" style="width:100%">
                     <div class="text">الفيلسوف جورج بيركلي</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="images\davidhumeland.jpg" style="width:100%;height: 300px; border-radius: 3%; ">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images\davidhumeland.jpg" style="width:100%">
                     <div class="text">الفيلسوف دافيد هيوم</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="images\roso.jpg" style="width:100%;height: 300px; border-radius: 3%;">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images\roso.jpg" style="width:100%">
                     <div class="text">الفيلسوف روسو</div>
                 </div>
 
-</div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
             </div>
             <br>
-        </div>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-
         <div id="key">
             <!-- to make a hyperlink between the pages by using a onclick order -->
 
@@ -243,7 +233,7 @@ height: 312px;
             <button id="but2">
                 مصادر & معلومات
             </button>
-            <button id="but3" style="margin-bottom:70px;">
+            <button id="but3">
                 arf
             </button>
 
@@ -253,18 +243,14 @@ height: 312px;
 
 </body>
 <script>
-
     var slideIndex = 1;
     showSlides(slideIndex);
-
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
-
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -280,7 +266,6 @@ height: 312px;
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
-
 </script>
 
 </html>

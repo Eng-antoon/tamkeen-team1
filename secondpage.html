@@ -1,49 +1,110 @@
 <html>
 
 <head>
-        <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 <style>
-  
     .but {
-        font-size: 25px;
+        /* font-size: 25px;
         margin-top: 5%;
         width: 85%;
         height: 13%;
         font-style: italic;
         border: 1px solid #024247;
-        font-family: 'Amiri';size: 50px;
-  
-color: #FBFFFF;
-    }
+        font-family: 'Amiri';size: 50px; color: #FBFFFF;
+        */
+        width: 100%;
+        height: 10%;
+        background-color: rgba(182, 85, 0, 0.596);
+        color: white;
+        margin-top: 30px;
+        border: 1px solid #ffffff54;
+        font-family: 'Amiri';
+        font-size: 318%;
+        border-radius: 5px;
 
+
+    }
 
     #but-contanier {
         display: flex;
         flex-direction: column;
         padding: 5%;
-     
+
         align-content: center;
         align-items: center;
         justify-content: center;
         justify-items: center;
-
-
-
     }
 
     #buthome {
         width: 11%;
         height: 45%;
-        background-color: #096E71;
+        background-color: rgba(182, 85, 0, 0.596);
         border: 1px solid #be96ebce;
         color: white;
-        font-family: 'Amiri';font-size: 120%;
+        font-family: 'Amiri';
+        font-size: 120%;
+
     }
-    #home{
+
+    #home {
+        display: flex;
+        width: 100%;
+        height: 14%;
+    }
+
+    #totalimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+
+
+    }
+
+    #imgfal {
+
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 3%;
+        margin-top: 100px;
+        width: -webkit-fill-available;
+        margin: unset;
+    }
+
+    .para {
+        font-family: Amiri;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        direction: rtl;
+
+    }
+
+    #forpara {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border:1px solid black;
+        background-color: #01818879;
+    }
+
+    #forinfo {
+
+
+        background-color: #01696E;
+    border: 1px solid rgba(255, 240, 240, 0.329);
+    height: 90px;
+    width: 90px;
+    font-size: 40px;
+    }
+    #placeinfo{
+width: 100%;
 display: flex;
-width:100%;
-height: 14%;
+justify-items: start;
+
     }
 </style>
 
@@ -53,20 +114,45 @@ height: 14%;
             <button id="buthome" onclick=location.href='firstpage.html'> الصفحة الرئيسية </button>
         </div>
         <!-- hansta5dm file html asmo wostamot25ra we n3ml benhom link b7es ano lma ydos 3la al button dah yfta7lo al html dah  -->
-        <button class="but" , style="background-color: #03595f;" onclick=location.href='thirdpage.html'> العصور
-            الوسطي المتأخرة </button>
-
+        <button class="but" , style="background-color: rgba(182, 85, 0, 0.596) ;"
+            onclick=location.href='thirdpage.html'> العصور الوسطى
+        </button>
+        <div id="placeinfo">
+            <button id="forinfo">info</button>
+            <div id="forpara">
+                <p class="para">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
+                    الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى عصر
+                    النهضة في القرن الخامس عشر.</p>
+                <p class="para">
+                    بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
+                    منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
+                    جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
+                    الكلاسيكيّة.</p>
+            </div>
+        </div>
         <!-- hansta5dm file html asmo wostamotkdma we n3ml benhom link b7es ano lma ydos 3la al button dah yfta7lo al html dah  -->
 
-        <button class="but" , style="background-color: #03595f;" onclick=location.href='forthpage.html'> العصور
-            الوسطي المتقدمة </button>
+        <button class="but" , style="background-color: rgba(182, 85, 0, 0.596);" onclick=location.href='forthpage.html'>
+            عصر النهضة
+        </button>
 
-        <button class="but" , style="background-color: #03595f;" onclick=location.href='fifthpage.html'>عصر النهضة</button>
+        <button class="but" , style="background-color: rgba(182, 85, 0, 0.596);" onclick=location.href='fifthpage.html'>
+            الفلاسفة الإسلاميين </button>
+    </div>
+    <div id="totalimg">
+        <img id="imgfal" src="images/totalfalsfa.jpg">
     </div>
 </body>
 
 <script>
+    var y = $(".para");
+    var x = $("#forinfo");
+    y.hide();
+    function HandleClick() {
 
+        y.toggle();
+    }
+    $("#forinfo").click(HandleClick);
 
 </script>
 
