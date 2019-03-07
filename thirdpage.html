@@ -18,7 +18,7 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #e0bd75;
+        background-color:  rgba(182, 85, 0, 0.596);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -101,10 +101,10 @@
     <span style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776; </span>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a id="but1" >الصفحة الاولي</a>
-        <a id="forinfo">Services</a>
-        <a >Clients</a>
-        <a >Contact</a>
+        <a id="but1">نشأته </a>
+        <a id = "but2">اهم اعماله</a>
+        <a  id = "but3"> حياته</a>
+        <a  id = "but4">مقولات</a>
     </div>
 
 
@@ -222,7 +222,8 @@ f.hide();
 function HandleClick() {
 
     f.toggle();
-    $("#but1").hide();
+   // $("#but1").hide();
+   $(".sidenav").hide();
 }
 $("#but1").click(HandleClick);
 var x = $(".para");
