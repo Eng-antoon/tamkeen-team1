@@ -82,6 +82,22 @@
 
 
     }
+    .para2
+    {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 30px;  
+    }
+     .para3
+     {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 30px;
+     }
 
     #but-container {
         display: flex;
@@ -235,6 +251,14 @@
                 هيغل. فتعرضت فلسفته في القرن العشرين لنقد لينين في كتابه «المادية والنقدية التجريبية».
             </p>
 
+            <p class= "para2">
+                حيات
+            </p>
+            <p class ="para3">
+                مقولا
+            </p>
+
+
         
     </div>
 
@@ -257,7 +281,9 @@
 
     f.hide();
     function HandleClick() {
-
+        y.hide();
+    z.hide();
+    x.hide();
         f.toggle();
        
     }
@@ -267,14 +293,43 @@
 
     x.hide();
     function HandleClick1() {
+        y.hide();
+    f.hide();
+    z.hide();
 
         x.toggle();
         $("#forinfo").hide();
     }
     $("#but2").click(HandleClick1);
 
+    var y = $(".para2");
 
 
+y.hide();
+function HandleClick2() {
+    z.hide();
+    f.hide();
+    x.hide();
+
+    y.toggle();
+    
+}
+$("#but3").click(HandleClick2);
+
+
+var z = $(".para3");
+
+
+z.hide();
+function HandleClick3() {
+    y.hide();
+    f.hide();
+    x.hide();
+
+    z.toggle();
+    
+}
+$("#but4").click(HandleClick3);
 </script>
 
 </html>
