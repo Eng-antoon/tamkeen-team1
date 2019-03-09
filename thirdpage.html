@@ -15,7 +15,7 @@
 
     .sidenav {
         height: 100%;
-        width: 0;
+        width: 30%;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -57,21 +57,16 @@
         }
     }
 
-    .title {
-        color: white;
-        display: flex;
-        direction: rtl;
-
-
-
-
-    }
 
     .ma3loma {
         display: flex;
         flex-direction: row;
         direction: rtl;
-
+font-size :50px;
+color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
     }
 
     .para {
@@ -79,8 +74,8 @@
         direction: rtl;
         color: white;
         font-family: Amiri;
-        font-size: 30px;
-        background-color: rgba(182, 85, 0, 0.596);
+        font-size: 50px;
+        background-color: rgba(136, 69, 11, 0.43);
 
 
     }
@@ -90,8 +85,8 @@
         direction: rtl;
         color: white;
         font-family: Amiri;
-        font-size: 30px;
-        background-color: rgba(182, 85, 0, 0.596);
+        font-size: 50px;
+        background-color: rgba(136, 69, 11, 0.43);
     }
 
     .para3 {
@@ -99,8 +94,8 @@
         direction: rtl;
         color: white;
         font-family: Amiri;
-        font-size: 30px;
-        background-color: rgba(182, 85, 0, 0.596);
+        font-size: 50px;
+        background-color: rgba(136, 69, 11, 0.43);
     }
 
     #but-container {
@@ -126,11 +121,20 @@
     }
 
     #img1 {
-        width: 36%;
-        height: 22%;
-        margin-right: 14%;
+        width: 41%;
+        height: 19%;
+        margin-right: 0%;
         margin-top: 3%;
         margin-left: 5%;
+
+
+    }
+    #pageborder{
+width: 100%;
+display: flex;
+flex-direction: column;
+padding:18px;
+
 
     }
 </style>
@@ -139,39 +143,49 @@
 
 
 <body background=" images/background.jpg">
+    <div id="pageborder">
     <!-- hna dy al 3lama bta3et al side menu -->
 
-    <span style="font-size:30px;cursor:pointer; color: rgb(255, 255, 255);" onclick="openNav()">&#9776; </span>
+    <span style="font-size:55px;cursor:pointer; color: white;" onclick="openNav()">&#9776; </span>
     <!--dy al awamr bta3et al side menu-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a id="but1">نشأته </a>
-        <a id="but2">اهم اعماله</a>
-        <a id="but3"> حياته</a>
-        <a id="but4" href="firstpage.html">الصفحة السابقة</a>
+        <a id="but1" onclick="closeNav()" style="font-size: 40px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته </a>
+        <a id="but2" onclick="closeNav()" style="font-size: 40px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+            اعماله</a>
+        <a id="but3" onclick="closeNav()" style="font-size: 40px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"> حياته</a>
+        <a id="but4" onclick="closeNav()" style="font-size: 40px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+        <a id="but5" onclick="closeNav()" style="font-size: 40px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+            href="firstpage.html">الصفحة الرئيسية</a>
+
     </div>
 
     <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
     <!---->
-    <div onclick="closeNav()" style="height:100%; width:100%;">
+    <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
         <!---->
         <div id="imgcontain">
             <img id="img1" src="images/georgeberkly-removebg.png">
             <h1 class="title"
-                style="font-size:100px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal;"
+                style="font-size:80px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
                 onclick="closeNav()">جورج بيركلي
             </h1>
         </div>
 
-        <div class="ma3loma">
+    <!--    <div class="ma3loma" >
             <h2 class="title">ولد سنة : </h2>
             <h2 class="title" id="mila">1685</h2>
         </div>
-        <div class="ma3loma">
+     <div class="ma3loma">
             <h2 class="title">توفي سنة : </h2>
             <h2 class="title" id="wafa"> 1753</h2>
-        </div>
-
+        </div>-->
+<p class="ma3loma" >
+ولد سنة: 1685
+<br>
+مات سنة:1753
+</p>
 
         <p class="para">
 
@@ -281,18 +295,19 @@
             هيغل. فتعرضت فلسفته في القرن العشرين لنقد لينين في كتابه «المادية والنقدية التجريبية».
         </p>
 
-        <p class="para2">
+        <p class="para2"> .......حياته</p>
+        <p class="para3">....... مقولات</p>
 
     </div>
 
 
-
+</div>
 
 </body>
 <script>
     //dy al function bta3t fat7 al side menu
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "400px";
     }
     //dy al function bta3et afl al side menu
     function closeNav() {
@@ -353,6 +368,7 @@
 
     }
     $("#but4").click(HandleClick3);
+   
 </script>
 
 </html>
