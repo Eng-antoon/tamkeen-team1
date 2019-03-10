@@ -6,6 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
     <script src="jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
 </head>
 <style>
     body {
@@ -15,7 +17,7 @@
 
     .sidenav {
         height: 100%;
-        width: 0;
+        width: 55%;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -30,7 +32,7 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color:white;
+        color: white;
         display: block;
         transition: 0.3s;
     }
@@ -57,21 +59,16 @@
         }
     }
 
-    .title {
-        color:white;
-         /*display: flex;*/
-        direction: rtl;
-        
-
-
-
-    }
 
     .ma3loma {
         display: flex;
         flex-direction: row;
         direction: rtl;
-
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
     }
 
     .para {
@@ -79,29 +76,29 @@
         direction: rtl;
         color: white;
         font-family: Amiri;
-        font-size: 30px;
-        background-color:rgba(182, 85, 0, 0.596); 
+        font-size: 20px;
+        background-color: rgba(136, 69, 11, 0.43);
 
 
     }
-    .para2
-    {
+
+    .para2 {
         display: flex;
         direction: rtl;
-        color :white;
-        font-family: Amiri;
-        font-size: 30px;  
-        background-color:rgba(182, 85, 0, 0.596); 
-    }
-     .para3
-     {
-        display: flex;
-        direction: rtl;
-        color:white;
+        color: white;
         font-family: Amiri;
         font-size: 30px;
-        background-color:rgba(182, 85, 0, 0.596); 
-     }
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 30px;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
 
     #but-container {
         display: flex;
@@ -126,11 +123,20 @@
     }
 
     #img1 {
-        width: 36%;
-        height: 22%;
-        margin-right: 0%;
-        margin-top:3%;
-        margin-left:20%;
+        width: 41%;
+        height: 19%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-left: 1%;
+
+    }
+
+    #pageborder {
+        width: 94%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+
 
     }
 </style>
@@ -139,40 +145,49 @@
 
 
 <body background=" images/background.jpg">
-    <!-- hna dy al 3lama bta3et al side menu -->
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
 
-    <span style="font-size:30px;cursor:pointer; color: rgb(255, 255, 255);" onclick="openNav()">&#9776; </span>
-    <!--dy al awamr bta3et al side menu-->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a id="but1">نشأته </a>
-        <a id="but2">اهم اعماله</a>
-        <a id="but3"> حياته</a>
-        <a id="but4">مقولات</a>
-    </div>
+        <span style="font-size:25px;cursor:pointer; color: white;" onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
 
-    <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
         <!---->
-        <div onclick="closeNav()" style="height:100%; width:100%;">
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
             <!---->
             <div id="imgcontain">
-                <img id="img1" src= "images/georgeberkly-removebg.png">
-                <h1 class="title"
-                    style="font-size:100px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal;"
-                    onclick="closeNav()">جورج بيركلي
+                <img id="img1" src="png/roso.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">الفيلسوف روسو
                 </h1>
             </div>
 
-        <div class="ma3loma">
-            <h2 class="title">ولد سنة : </h2>
-            <h2 class="title" id="mila">1685</h2>
-        </div>
-        <div class="ma3loma">
-            <h2 class="title">توفي سنة : </h2>
-            <h2 class="title" id="wafa"> 1753</h2>
-        </div>
+        
+            <p class="ma3loma">
+                ولد سنة: 1685
+                <br>
+                مات سنة:1753
+            </p>
 
-       
             <p class="para">
 
                 الاسقف جورج بيركلي هو فيلسوف ايرلاندي من عائلة التجريبيون الذين إنجازهم الرئيسي كان تنظير المثالية
@@ -281,20 +296,13 @@
                 هيغل. فتعرضت فلسفته في القرن العشرين لنقد لينين في كتابه «المادية والنقدية التجريبية».
             </p>
 
-            <p class= "para2">
-                حيات
-            </p>
-            <p class ="para3">
-                مقولا
-            </p>
+            <p class="para2"> .......حياته</p>
+            <p class="para3">....... مقولات</p>
 
+        </div>
 
-        
 
     </div>
-
-
-
 
 </body>
 <script>
@@ -313,59 +321,55 @@
     f.hide();
     function HandleClick() {
         y.hide();
-    z.hide();
-    x.hide();
+        z.hide();
+        x.hide();
         f.toggle();
-        
 
     }
     $("#but1").click(HandleClick);
-    
     var x = $(".para");
 
 
     x.hide();
     function HandleClick1() {
         y.hide();
-    f.hide();
-    z.hide();
+        f.hide();
+        z.hide();
 
         x.toggle();
-       
-        $("#forinfo").hide();
+
     }
     $("#but2").click(HandleClick1);
 
     var y = $(".para2");
 
 
-y.hide();
-function HandleClick2() {
-    z.hide();
-    f.hide();
-    x.hide();
-
-    y.toggle();
-    
-    
-}
-$("#but3").click(HandleClick2);
-
-
-var z = $(".para3");
-
-
-z.hide();
-function HandleClick3() {
     y.hide();
-    f.hide();
-    x.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
 
-    z.toggle();
-   
-    
-}
-$("#but4").click(HandleClick3);
+        y.toggle();
+
+    }
+    $("#but3").click(HandleClick2);
+
+
+    var z = $(".para3");
+
+
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+
+        z.toggle();
+
+    }
+    $("#but4").click(HandleClick3);
+
 </script>
 
 </html>
