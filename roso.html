@@ -14,6 +14,7 @@
         font-family: "Lato", sans-serif;
         background-position-x: center;
     }
+
     .sidenav {
         height: 100%;
         width: 55%;
@@ -26,6 +27,7 @@
         transition: 0.5s;
         padding-top: 60px;
     }
+
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -34,9 +36,11 @@
         display: block;
         transition: 0.3s;
     }
+
     .sidenav a:hover {
         color: #f1f1f1;
     }
+
     .sidenav .closebtn {
         position: absolute;
         top: 0;
@@ -44,14 +48,18 @@
         font-size: 36px;
         margin-left: 50px;
     }
+
     @media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
         }
+
         .sidenav a {
             font-size: 18px;
         }
     }
+
+
     .ma3loma {
         display: flex;
         flex-direction: row;
@@ -62,6 +70,7 @@
         direction: rtl;
         background-color: rgba(136, 69, 11, 0.43);
     }
+
     .para {
         display: flex;
         direction: rtl;
@@ -69,7 +78,10 @@
         font-family: Amiri;
         font-size: 20px;
         background-color: rgba(136, 69, 11, 0.43);
+
+
     }
+
     .para2 {
         display: flex;
         direction: rtl;
@@ -78,6 +90,7 @@
         font-size: 30px;
         background-color: rgba(136, 69, 11, 0.43);
     }
+
     .para3 {
         display: flex;
         direction: rtl;
@@ -86,6 +99,7 @@
         font-size: 30px;
         background-color: rgba(136, 69, 11, 0.43);
     }
+
     #but-container {
         display: flex;
         flex-direction: column;
@@ -94,7 +108,10 @@
         padding: 20px;
         justify-content: center;
         align-items: center;
+
+
     }
+
     #imgcontain {
         display: flex;
         flex-direction: row;
@@ -102,19 +119,25 @@
         align-content: end;
         align-items: center;
         justify-content: center;
+
     }
+
     #img1 {
         width: 41%;
         height: 19%;
         margin-right: 10%;
         margin-top: 10%;
         margin-left: 1%;
+
     }
+
     #pageborder {
         width: 94%;
     display: flex;
     flex-direction: column;
     padding: 6px;
+
+
     }
 </style>
 
@@ -152,24 +175,17 @@
     width: 95%;">
             <!---->
             <div id="imgcontain">
-                <img id="img1" src="png/georgeberkly-removebg.png">
+                <img id="img1" src="png/جان جاك روسو.png">
                 <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
-                    onclick="closeNav()">نيكولو مكيافيلي
+                    onclick="closeNav()">جان جاك روسو
                 </h1>
             </div>
 
-            <!--    <div class="ma3loma" >
-            <h2 class="title">ولد سنة : </h2>
-            <h2 class="title" id="mila">1685</h2>
-        </div>
-     <div class="ma3loma">
-            <h2 class="title">توفي سنة : </h2>
-            <h2 class="title" id="wafa"> 1753</h2>
-        </div>-->
+        
             <p class="ma3loma">
-                ولد سنة:1469
+                ولد سنة: 1685
                 <br>
-                مات سنة:1527
+                مات سنة:1753
             </p>
 
             <p class="para">
@@ -298,43 +314,62 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+
     //hna byndah 3la al tare5 we al youm
     var f = $(".ma3loma");
+
     f.hide();
     function HandleClick() {
         y.hide();
         z.hide();
         x.hide();
         f.toggle();
+
     }
     $("#but1").click(HandleClick);
     var x = $(".para");
+
+
     x.hide();
     function HandleClick1() {
         y.hide();
         f.hide();
         z.hide();
+
         x.toggle();
+
     }
     $("#but2").click(HandleClick1);
+
     var y = $(".para2");
+
+
     y.hide();
     function HandleClick2() {
         z.hide();
         f.hide();
         x.hide();
+
         y.toggle();
+
     }
     $("#but3").click(HandleClick2);
+
+
     var z = $(".para3");
+
+
     z.hide();
     function HandleClick3() {
         y.hide();
         f.hide();
         x.hide();
+
         z.toggle();
+
     }
     $("#but4").click(HandleClick3);
+
 </script>
 
 </html>
