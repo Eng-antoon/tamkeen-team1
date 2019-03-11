@@ -136,7 +136,7 @@
 
         <span id="sidenav123"  onclick="openNav()">&#9776; </span>
         <!--dy al awamr bta3et al side menu-->
-        <div id="mySidenav" class="sidenav">
+        <div class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a id="but1" onclick="closeNav()"
                 style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
@@ -161,17 +161,24 @@
     width: 95%;">
             <!---->
             <div id="imgcontain">
-                <img id="img1" src="png/toma akony1.png">
+                <img id="img1" src="png/termizy.png">
                 <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
-                onclick="closeNav()">توماالاكويني
+                    onclick="closeNav()">جون لوك
                 </h1>
             </div>
 
-        
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
             <p class="ma3loma">
-                ولد سنة:1225
+                ولد سنة: 1632
                 <br>
-                مات سنة:1274
+                مات سنة:1704
             </p>
 
             <p class="para">
@@ -300,62 +307,43 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
-
     //hna byndah 3la al tare5 we al youm
     var f = $(".ma3loma");
-
     f.hide();
     function HandleClick() {
         y.hide();
         z.hide();
         x.hide();
         f.toggle();
-
     }
     $("#but1").click(HandleClick);
     var x = $(".para");
-
-
     x.hide();
     function HandleClick1() {
         y.hide();
         f.hide();
         z.hide();
-
         x.toggle();
-
     }
     $("#but2").click(HandleClick1);
-
     var y = $(".para2");
-
-
     y.hide();
     function HandleClick2() {
         z.hide();
         f.hide();
         x.hide();
-
         y.toggle();
-
     }
     $("#but3").click(HandleClick2);
-
-
     var z = $(".para3");
-
-
     z.hide();
     function HandleClick3() {
         y.hide();
         f.hide();
         x.hide();
-
         z.toggle();
-
     }
     $("#but4").click(HandleClick3);
-
 </script>
 
 </html>
