@@ -14,20 +14,18 @@
         font-family: "Lato", sans-serif;
         background-position-x: center;
     }
-
     .sidenav {
         height: 100%;
         width: 55%;
         position: fixed;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         background-color: rgba(182, 85, 0, 0.596);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
     }
-
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -36,30 +34,25 @@
         display: block;
         transition: 0.3s;
     }
-
     .sidenav a:hover {
         color: #f1f1f1;
     }
-
     .sidenav .closebtn {
         position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+    top: 0;
+    width: 80%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
     }
-
     @media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
         }
-
         .sidenav a {
             font-size: 18px;
         }
     }
-
-
     .ma3loma {
         display: flex;
         flex-direction: row;
@@ -70,7 +63,6 @@
         direction: rtl;
         background-color: rgba(136, 69, 11, 0.43);
     }
-
     .para {
         display: flex;
         direction: rtl;
@@ -78,10 +70,7 @@
         font-family: Amiri;
         font-size: 20px;
         background-color: rgba(136, 69, 11, 0.43);
-
-
     }
-
     .para2 {
         display: flex;
         direction: rtl;
@@ -90,7 +79,6 @@
         font-size: 30px;
         background-color: rgba(136, 69, 11, 0.43);
     }
-
     .para3 {
         display: flex;
         direction: rtl;
@@ -99,7 +87,6 @@
         font-size: 30px;
         background-color: rgba(136, 69, 11, 0.43);
     }
-
     #but-container {
         display: flex;
         flex-direction: column;
@@ -108,10 +95,7 @@
         padding: 20px;
         justify-content: center;
         align-items: center;
-
-
     }
-
     #imgcontain {
         display: flex;
         flex-direction: row;
@@ -119,23 +103,25 @@
         align-content: end;
         align-items: center;
         justify-content: center;
-
     }
-
     #img1 {
         width: 41%;
         height: 19%;
         margin-right: 10%;
         margin-top: 10%;
         margin-left: 1%;
-
     }
-
     #pageborder {
         width: 94%;
     display: flex;
     flex-direction: column;
     padding: 6px;
+    }
+    #sidenav123{
+        font-size:25px;
+        cursor:pointer;
+         color: white;
+          direction:rtl;
 
 
     }
@@ -144,11 +130,11 @@
 
 
 
-<body background="images/background.jpg">
+<body background=" images/background.jpg">
     <div id="pageborder">
         <!-- hna dy al 3lama bta3et al side menu -->
 
-        <span style="font-size:25px;cursor:pointer; color: white;" onclick="openNav()">&#9776; </span>
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
         <!--dy al awamr bta3et al side menu-->
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
