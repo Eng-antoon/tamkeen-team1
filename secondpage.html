@@ -123,6 +123,32 @@
         font-size: 40px;
         color: white;
     }
+    .forinfo2 {
+
+
+/* background-color:  rgba(182, 85, 0, 0.596);*/
+border: 1px solid rgba(255, 240, 240, 0);
+height: 57px;
+
+padding: 10px;
+
+margin-top: 5px;
+font-size: 40px;
+color: white;
+}
+.forinfo3 {
+
+
+/* background-color:  rgba(182, 85, 0, 0.596);*/
+border: 1px solid rgba(255, 240, 240, 0);
+height: 57px;
+
+padding: 10px;
+
+margin-top: 5px;
+font-size: 40px;
+color: white;
+}
 
 
     .placeinfo {
@@ -181,11 +207,11 @@
                 <button class="but" , style="background-color: rgba(182, 85, 0, 0.397) ;"
                     onclick=location.href='falasfatotal.html'>  عصور النهضة
                     <div class="forpara">
-                        <p class="para">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
+                        <p  class="para2">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
                             الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى
                             عصر
                             النهضة في القرن الخامس عشر.</p>
-                        <p class="para">
+                        <p  class="para2">
                             بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
                             منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
                             جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
@@ -194,7 +220,7 @@
                 </button>
                 <div class="placeinfo">
     
-                    <a herf "" class="forinfo"> <i class="fas fa-info-circle"></i>
+                    <a herf ""  class="forinfo2"> <i class="fas fa-info-circle"></i>
     
                     </a>
     
@@ -207,11 +233,11 @@
                 <button class="but"  , style="background-color: rgba(182, 85, 0, 0.397) ;"
                     onclick=location.href='falasfatotal.html'>  الفلاسفة عرب
                     <div class="forpara">
-                        <p class="para">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
+                        <p  class="para3">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
                             الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى
                             عصر
                             النهضة في القرن الخامس عشر.</p>
-                        <p class="para">
+                        <p  class="para3">
                             بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
                             منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
                             جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
@@ -220,7 +246,7 @@
                 </button>
                 <div class="placeinfo">
     
-                    <a herf "" class="forinfo"> <i class="fas fa-info-circle"></i>
+                    <a herf ""  class="forinfo3"> <i class="fas fa-info-circle"></i>
     
                     </a>
     
@@ -253,6 +279,25 @@
 
 
 
+    var c = $(".para2");
+    c.hide();
+    function HandleClick2() {
+
+        c.toggle();
+    }
+    $(".forinfo2").click(HandleClick2);
+
+
+
+
+
+    var g = $(".para3");
+    g.hide();
+    function HandleClick3() {
+
+        g.toggle();
+    }
+    $(".forinfo3").click(HandleClick3);
 </script>
 
 
