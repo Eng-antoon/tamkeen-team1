@@ -2,19 +2,13 @@
 
 <head>
     <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script src="jquery-3.3.1.min.js"></script>
 </head>
 <style>
+    
     .but {
-        /* font-size: 25px;
-        margin-top: 5%;
-        width: 85%;
-        height: 13%;
-        font-style: italic;
-        border: 1px solid #024247;
-        font-family: 'Amiri';size: 50px; color: #FBFFFF;
-        */
         width: 100%;
         height: inherit;
         background-color: rgba(182, 85, 0, 0.596);
@@ -38,6 +32,7 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+        
     }
 
     #buthome {
@@ -104,84 +99,36 @@
 
     }
 
-    #forpara {
+    .forpara {
         display: flex;
         flex-direction: column;
-         
+
         align-items: center;
-        
+
         border: 1px solid rgba(255, 255, 255, 0);
         background-color: rgba(248, 246, 245, 0);
         margin-top: 10px
     }
 
-    #forpara2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid rgba(255, 255, 255, 0);
-        background-color: #234a4c36;
-    }
 
-    #forpara3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid rgba(248, 246, 246, 0);
-        background-color: #234a4c36;
-    }
-
-    #forinfo {
+    .forinfo {
 
 
-       /* background-color:  rgba(182, 85, 0, 0.596);*/
-    border: 1px solid rgba(255, 240, 240, 0);
-    height: 57px;
-    width: 174px;
-    padding: 10px;
-    padding-right: 690px;
-    margin-top: 5px;
-    font-size: 40px;
-    color :white; 
-    }
-
-    #forinfo2 {
-
-
-        background-color: rgba(182, 85, 0, 0.596); 
+        /* background-color:  rgba(182, 85, 0, 0.596);*/
         border: 1px solid rgba(255, 240, 240, 0);
-        height: 30px;
-        width: 200px;
-        font-size: 20px;
+        height: 57px;
+        width: 174px;
+        padding: 10px;
+        padding-right: 690px;
+        margin-top: 5px;
+        font-size: 40px;
+        color: white;
     }
 
-    #forinfo3 {
 
-
-        background-color: rgba(182, 85, 0, 0.596);
-        border: 1px solid rgba(255, 240, 240, 0);
-        height: 30px;
-        width: 200px;
-        font-size: 20px;
-    }
-
-    #placeinfo {
+    .placeinfo {
         width: center;
-       
-        display: flex;
-        justify-items: start;
 
-    }
-
-    #placeinfo2 {
-        width: centre;
-        display: flex;
-        justify-items: start;
-
-    }
-
-    #placeinfo3 {
-        width: centre;
         display: flex;
         justify-items: start;
 
@@ -193,29 +140,58 @@
         <div id="home">
             <button id="buthome" onclick=location.href='firstpage.html'> الصفحة الرئيسية </button>
         </div>
+
         <!-- hansta5dm file html asmo wostamot25ra we n3ml benhom link b7es ano lma ydos 3la al button dah yfta7lo al html dah  -->
         <button class="but" , style="background-color: rgba(182, 85, 0, 0.596) ;"
             onclick=location.href='falasfatotal.html'> العصور الوسطى
-            <div id="forpara">
+            <div class="forpara">
                 <p class="para">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
-                      الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى عصر
-                      النهضة في القرن الخامس عشر.</p>
-                  <p class="para">
-                      بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
-                      منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
-                      جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
-                      الكلاسيكيّة.</p>
-              </div> 
+                    الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى عصر
+                    النهضة في القرن الخامس عشر.</p>
+                <p class="para">
+                    بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
+                    منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
+                    جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
+                    الكلاسيكيّة.</p>
+            </div>
         </button>
-        <div id="placeinfo">
-           
-           <a herf ""  id ="forinfo"  >  <i class="fas fa-info-circle"></i>
-            
-           
-           
+        <div class="placeinfo">
+
+            <a herf "" class="forinfo"> <i class="fas fa-info-circle"></i>
+
+</a>
+
         </div>
         
+        <!-- hansta5dm file html asmo wostamot25ra we n3ml benhom link b7es ano lma ydos 3la al button dah yfta7lo al html dah  -->
+        <button class="but" , style="background-color: rgba(182, 85, 0, 0.596) ;"
+            onclick=location.href='falasfatotal.html'> العصور الوسطى
+            <div class="forpara">
+                <p class="para">فلسفة القرون الوسطى هي مصطلح يستخدم للإشارة إلى الفلسفة التي كانت موجودة خلال القرون
+                    الوسطى، وهي الفترة الممتدّة تقريباً من سقوط الإمبراطورية الرومانية الغربية في القرن الخامس حتّى عصر
+                    النهضة في القرن الخامس عشر.</p>
+                <p class="para">
+                    بدأت فلسفة القرون الوسطى -والتي تمّ فهمها على أنّها مشروع استقصائيّ فلسفيّ مستقلّ- في بغداد، في
+                    منتصف القرن الثامن، وفي فرنسا، في قاعة شارلمان الرّسميّة، في الرّبع الأخير من القرن الثامن؛وتعرف
+                    جزئيّاً بأنها إعادة لاكتشاف الثقافة القديمة التي تطوّرت في وقت سابق في اليونان وروما خلال الفترة
+                    الكلاسيكيّة.</p>
+            </div>
+        </button>
+        <div class="placeinfo">
+
+            <a herf "" class="forinfo"> <i class="fas fa-info-circle"></i>
+
+
+</a>
+        </div>
+
+
+
+
+
+
     </div>
+    
 
     <div id="totalimg">
         <img id="imgfal" src="images/totalfalsfa.jpg">
