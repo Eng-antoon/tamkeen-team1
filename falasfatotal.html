@@ -2,88 +2,488 @@
 
 <head>
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
 
 </head>
 <style>
+     body {
+       
+        margin: 0;
+        width:auto;
+
+    }
+    .whole-container {
+        display: flex;
+        flex-direction: row;
+        width: 36%;
+
+    }
+
     .firstcont {
-        border: 2px solid white;
+        border: 2px solid rgba(129, 77, 30, 0.774);
         border-radius: 5%;
-        height: 30%;
-        width: 25%;
+        height: 24%;
+        width: 81%;
+        margin: 5%;
+        padding: 3%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(153, 91, 36, 0.596);
+        background-color: rgba(153, 91, 36, 0.452);
 
     }
 
     .imgtemp {
         height: 62%;
         width: 89%;
-        border: 2px solid white;
+        border: 1px solid rgba(129, 77, 30, 0.774);
         border-radius: 50%;
-
-
-
-
+        background-color: rgba(124, 73, 28, 0.712)
     }
 
     .nameof {
         color: rgb(0, 0, 0);
-
-        font-size: 65px;
-
-    }
-
-    #templatecontain {
-
-display: flex;
-
+        font-size: 81%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        font-family: Tajawal;
 
     }
 
     .pic {
         width: 100%;
         height: 100%;
+        margin: 0px;
         border-radius: 50%;
+
+    }
+
+    #hyper {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #tempcont {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        margin: 5px;
 
     }
 </style>
 
-<body background=" images/background.jpg">
-    <div id="templatecontain">
-        <div class="whole-container">
-            <div class="firstcont">
-                <div class="imgtemp">
-                    <img class="pic" src="images/davidhume.jpg">
+<body>
+
+    <body background=" images/background.jpg">
+        <div id="tempcont">
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <!--asm al html eh ?!-->
+                            <img class="pic" src="png\ebnroshd.png" onclick=location.href='ebnroshd.html'>
+                        </div>
+                        <h2 class="nameof"> ابن رشد</h2>
+                       </div>
+
                 </div>
-                <h2 class="nameof"> الاسم</h2>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            
+                            <img class="pic" src="png/galal el deen.png" onclick=location.href='glaleldeen.html'>
+                        </div>
+                        <h2 class="nameof">جلال الدين الرومي</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                         
+                            <img class="pic" src="png/david hume.png" onclick=location.href='davidhume.html'>
+                        </div>
+                        <h2 class="nameof">دافيد هيوم</h2>
+
+
+                    </div>
+
+                </div>
 
 
             </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                           
+                            <img class="pic" src="png/brono.png" onclick=location.href='gordano.html'>
+                        </div>
+                        <h2 class="nameof">جوردانو برونو</h2>
 
 
-        </div>
-        <div class="whole-container">
-            <div class="firstcont">
-                <div class="imgtemp">
+                    </div>
 
                 </div>
-                <h2 class="nameof"> الاسم</h2>
+              
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/el-razy.png" onclick=location.href='bakrelrazy.html'>
+                        </div>
+                        <h2 class="nameof">أبو بكر الرازي</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <!--asm al html eh ?!-->
+                            <img class="pic" src="png/jhon luck.png" onclick=location.href='johnlouk.html'>
+                        </div>
+                        <h2 class="nameof">جون لوك</h2>
+
+
+                    </div>
+
+                </div>
 
 
             </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="" onclick=location.href='7akimtermizy.html'>
+                        </div>
+                        <h2 class="nameof">الحكيم الترمذي</h2>
 
 
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/roso.png" onclick=location.href='roso.html'>
+                        </div>
+                        <h2 class="nameof">جان جاك روسو</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                         
+                            <img class="pic" src="png/foltier.png" onclick=location.href='voltire.html'>
+                        </div>
+                        <h2 class="nameof">فولتير</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/rinih dicart.png" onclick=location.href='dekart.html'>
+                        </div>
+                        <h2 class="nameof">رينيه ديكارت</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/kant.png" onclick=location.href='emanoilkant.html'>
+                        </div>
+                        <h2 class="nameof">إيمانويل كانت</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            
+                            <img class="pic" src="png/beckon.png" onclick=location.href='fransisbekon.html'>
+                        </div>
+                        <h2 class="nameof">فرانسيس بيكون</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/lapitiz.png" onclick=location.href='lapitiz.html'>
+                        </div>
+                        <h2 class="nameof">غوتفريد لابيتيز</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/baroo5.png" onclick=location.href='baro5.html'>
+                        </div>
+                        <h2 class="nameof">باروخ سبينوزا</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png\ebnsina.png" onclick=location.href='ebnsina.html'>
+                        </div>
+                        <h2 class="nameof">
+                    ابن سينا
+                    </h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/fareed el den al 3atar.png" onclick=location.href='farideldenel3atar.html'>
+                        </div>
+                        <h2 class="nameof">فريد الدين العطار</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/faraby.png" onclick=location.href='faraby.html'>
+                        </div>
+                        <h2 class="nameof">الفارابي</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <!--asm al html eh ?!-->
+                            <img class="pic" src="png/ebn-3rby.png" onclick=location.href='el3rbi.html'>
+                        </div>
+                        <h2 class="nameof">إبن عربي</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <!--asm al html eh ?!-->
+                            <img class="pic" src="png/7alag.png" onclick=location.href='7lag.html'>
+                        </div>
+                        <h2 class="nameof">الحلاج</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <!--asm al html eh ?!-->
+                            <img class="pic" src="png/el3'zalii.png" onclick=location.href='el8zali.html'>
+                        </div>
+                        <h2 class="nameof">
+                            أبو حامد الغزالي
+
+                        </h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/kobrinikos.png" onclick=location.href='kobrinikos.html'>
+                        </div>
+                        <h2 class="nameof">كوبرنيكوس</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/martin luther.png" onclick=location.href='martinlother.html'>
+                        </div>
+                        <h2 class="nameof">مارتن لوثر</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/mickafily.png" onclick=location.href='mikafily.html'>
+                        </div>
+                        <h2 class="nameof">ميكافيلي</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/berkly.png" onclick=location.href='georgeberkly.html'>
+                        </div>
+                        <h2 class="nameof">جورج بيركلي</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/mirandola.png" onclick=location.href='bekodelamandela.html'>
+                        </div>
+                        <h2 class="nameof">بيكو ديلا ميراندولا</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/toma akony.png" onclick=location.href='tomaakoni.html'>
+                        </div>
+                        <h2 class="nameof">توماس اكيناس</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/erasmos.png" onclick=location.href='erasmos.html'>
+                        </div>
+                        <h2 class="nameof">ايراسموس</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="hyper">
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="" onclick=location.href='ebntafil.html'>
+                        </div>
+                        <h2 class="nameof">موسى بن طفيل</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/mosa ebn-maymon.png" onclick=location.href='mosaebnmaimon.html'>
+                        </div>
+                        <h2 class="nameof">موسى بن ميمون</h2>
+
+
+                    </div>
+
+                </div>
+                <div class="whole-container">
+                    <div class="firstcont">
+                        <div class="imgtemp">
+                            <img class="pic" src="png/tomas-hobs.png" onclick=location.href='tomashobins.html'>
+                        </div>
+                        <h2 class="nameof">هوبز</h2>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
         </div>
-    </div>
-
-</body>
-<script>
 
 
+    </body>
 
-</script>
+
+    <script>
+
+//ا-  - الحلالي
+    </script>
+
+
+
 
 </html>

@@ -1,0 +1,318 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/kant.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()"> إيمانويل كانت
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة: 1724
+                <br>
+                إيمانويل كانت هو الطفل الرابع ضمن تسعة أطفال للأبوين يوهان جورج كانت الذي كان يعمل في تجهيز مستلزمات الأحصنة وأنّا ريجينا كانت. لاحقاً خلال فترة حياته غير إيمانويل طريقة كتابة اسمه من Kant إلى Kantto ليظهر التزامه بقواعد الإملاء الألمانية. كان والداه أتباعًا مخلصين لحركة التقوى الدينية وهي أحد فروع الكنيسة اللوثرية في القرن الثامن عشر.
+                <br>
+حصل كانت على تعليمه بفضل كاهن محلي رأى إمكانيات محتملة في الشاب كانت فقام بتدبير تعليم لائق له، وخلال دراسته أظهر كانت اهتماماً عميقاً بدروس اللغة اللاتينية.
+<br>
+في عام 1740 سجل كانت في جامعة كونيغسبرغ لدراسة اللاهوت، ولكن سرعان ما انجذب للرياضيات والفيزياء. توفي والده في عام 1746 وبالتالي أُجبر على ترك الجامعة لمساعدة عائلته لمدة عشر سنوات حيث عمل كمدرس خاص لأبناء الأثرياء وخلال هذا الوقت نشر عدة أوراق علمية تتحدث أسئلة علمية تهدف لاكتشاف الأرضية المتوسطة بين العقلانية والتجريبية، وخلال هذه المدة وتحديداً في عام 1749 كتب كتابه الأول بعنوان أفكار حول التقديرات الصحيحة للقوى الحية وقام بعدة اكتشافات فلكية هامة حول طبيعة دوران الأرض مما أكسبه جائزة أكاديمية برلين Berlin Academy Prize.
+<br>
+في سنواته الأخيرة، كانت حياة كانت متكدرة بسبب فقدانه للذاكرة وعاش تحت رعاية أخته كاثرينا باربرا Katharina Barbara إلى أن توفي في عام 1804 عن عمر يناهز الثمانين. ودفن داخل كاتدرائية كونيغسبر
+            </p>
+
+            <p class="para">
+                في عام 1755 عاد إيمانويل كانت لجامعة كونيغسبيرغ ليتابع تعليمه وفي نفس العام حصل على درجة الدكتوراه في الفلسفة، وخلال ال 15 سنة التالية عمل كانت كمحاضر ومدرس وكتب عدة أعمال فلسفية كبيرة وفي 1770 أصبح بروفسيور بصلاحيات كاملة في جامعة كونيغسبرغ يدرس المنطق والعلوم ما وراء الطبيعة.
+                <br>
+                في عام 1781 نشر كانت نقد السبب النقي Critique of Pure Reason وهو عمل ضخم وواحد من أهم المؤلفات التي تتحدث عن الفكر الغربي. وحاول كانت أن يشرح من خلاله كيف يتفاعل السبب والتجارب مع الفكر والفهم، هذا الاقتراح الثوري شرح كيف يقوم الدماغ بتنظيم التجارب واستخدامها في فهم طريقة عمل العالم.
+                <br>
+                ركز كانت على الأخلاق والدراسة الفلسفية للأفعال المعنوية. واقترح قانون أخلاق أسماه: الضرورة الحتمية categorical imperative والذي يقول إن الأخلاق مشتقة من العقلانية وجميع الأحكام الأخلاقية مدعومة عقلانياً، ما هو صائب يكون صائباً وما هوباطل يكون باطلًا إذ لا يوجد منطقة رمادية بين الأمرين. البشر ملزمون باتباع هذه الحتمية بشكل غير مشروط إذا ما أرادوا أن يكونوا أخلاقيين.
+                <br>
+                وبالرغم من أن نقد السبب النقي Critique of Pure Reason لم يجذب سوى القليل من الانتباه في عصره، فإن كانت تابع صقل نظرياته من خلال سلسلة من المقالات تتضمن نقد السبب العملي Critique of Practical Reason ونقد الحكم Critique of Judgment وتابع كانت كتابة الفلسفة حتى وفاته بفترة قصيرة.
+            </p>
+
+            <p class="para2"> لم يتزوج كانت ولم يحظى بعائلة، بل كرس جلّ حياته للفلسفة وفهم المنطق وطريقة عمل الدماغ البشري لفهم العالم من حوله.</p>
+            <p class="para3">شيئان فقط يسببان الخوف لي ، السماء المليئة بالنجوم من فوقي ، و القانون الأخلاقي في داخلي.
+                <br>
+                 نحكم على قلب الرجل ، من خلال تعامله مع الحيوانات.
+                <br>
+                 عدم النضج هو حالة الفشل ، باستخدام ذكاءك الشخصي ، من دون توجيه الأخرين.
+                <br>
+                 من يجعل نفسه دودة ، فلا يغضب عندما يدوس عليه أحدهم.
+                <br>
+                 التجربة من دون نظرية عمياء ، ولكن النظرية من دون تجربة مجرد مسرحية فكرية.
+                <br>
+                 مسألة لا شك فيها ، بأن كل معارفنا جاءت بالتجربة.
+                <br>
+                 العلم هو معرفة منظمة ، الحكمة هي حياة منظمة.
+                <br>
+                 اعمل الحق دوما ، و إن كان العالم سيفنى.
+                <br>
+                 تعامل مع مبادئك  ، كأنها ستكون قانوناً للعالم.
+                <br>
+                 كل المعارف تبدأ بالحواس ، ثم يتم فهمها ، قبل أن يتم استيبعابها بالعقل ، والأخيرة هي المرحلة الأهم وليس هناك أعلى منها.
+                <br>
+                 بكذبة يخسر الرجل كرامته.
+                <br>
+                 في القانون يعتبر الإنسان مذنباً ، في حال قام بمخالفة أحد القوانين ، في الأخلاق يعتبر مذنباً لو فكر بمخالفتها.
+                <br>
+                 لا يمكن تجنب إفساد امتلاك القوة ، لاستخدام العقل.
+                <br>
+                 السلام الدائم موجود ، فقط في المقبرة.
+                <br>
+                 كي تكون يجب أن تفعل.
+                <br>
+                 ليس مهماً أن أعيش حياتي فرحاً ، لكن المهم أن أعيشها بشرف.
+                <br>
+                 الجحود هو جوهر الحماقة.
+                <br>
+                 قواعد السعادة : ” شيء تفعله ، وشيء تحبه ، وشيء تأمله”.
+                <br>
+                 لسنا أثرياء بما نملك ، لكن بما نستطيع فعله من دونها.
+                <br>
+                 انظر عن قرب ، فالجمال قد يكون صغيراً جداً.
+                <br>
+                 ثلاث يساعدن على تحمل مشقات الحياة: الأمل والنوم والضحك.
+                <br>
+                 لا يمكن لأحد منا تقديم حقيقة موضوعية لأي فكرة نظرية أو تقديمها عدا فكرة الحرية لأن هذا شرط القانون الأخلاقي الذي حقيقته مسلمة. حقيقة فكرة الله يمكن أن تقدم فقط بطريقة هذه الفكرة، من ثم فقط مع غاية عملية، مثلا التصرف كما لو الله موجود، من ثم فقط لهذه الغاية</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    f.hide();
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>
