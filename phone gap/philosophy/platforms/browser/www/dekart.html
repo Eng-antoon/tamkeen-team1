@@ -1,0 +1,297 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/rinih dicart.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">رينيه ديكارت
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد في 31 مارس 1596
+                <br>
+                توفي في 11 فبراير 1650
+            </p>
+
+            <p class="ma3loma">
+                    فيلسوف، وعالم رياضي وفيزيائي فرنسي، يلقب بـ"أبو الفلسفة الحديثة"، وكثير من الأطروحات الفلسفية الغربية التي جاءت بعده، هي انعكاسات لأطروحاته، والتي ما زالت تدرس حتى اليوم، خصوصًا كتاب (تأملات في الفلسفة الأولى-1641 م) الذي ما زال يشكل النص القياسي لمعظم كليات الفلسفة. كما أن لديكارت تأثير واضح في علم الرياضيات، فقد اخترع نظامًا رياضيًا سمي باسمه وهو (نظام الإحداثيات الديكارتية)، الذي شكل النواة الأولى لـ(الهندسة التحليلية)، فكان بذلك من الشخصيات الرئيسية في تاريخ الثورة العلمية.
+
+                    وديكارت هو الشخصية الرئيسية لمذهب العقلانية في القرن17 م، كما كان ضليعًا في علم الرياضيات، فضلًا عن الفلسفة، وأسهم إسهامًا كبيرًا في هذه العلوم، وديكارت هو صاحب المقولة الشهيرة:
+                    
+                    "أنا أفكر، إذًا أنا موجود'".
+            </p>
+            <p class="para"><br>مقال عن المنهج (1637 م).
+            <br>علم الهندسة (1637 م).
+            <br>تأملات في الفلسفة الأولى (1641 م).
+            <br>مبادئ الفلسفة (1644 م).
+            <br>العالم
+            <br>قواعد لتوجيه التفكير
+            <br>وله عدة مؤلفات أخرى لم تنشر بالعربية إلى اليوم، منها في الفلسفة والرياضيات والعواطف والموسيقى، ومنها بعض المراسلات.</p>
+
+            <p class="para2"> ولد ديكارت في 31 مارس عام 1596 م في مدينة لاهاي إن تورين، لكن أسرته كانت ترجع في أصلها إلى هولندا. ينتمي ديكارت إلى أسرة من صغار النبلاء، حيث عمل أبوه مستشارًا في برلمان إقليم بريتانيا الفرنسي. وكان جده لأبيه طبيبًا، وجده لأمه حاكمًا لإقليم بواتيه. وفي عام 1604 التحق ديكارت بمدرسة لافلشي La Fliche، وهي تنتمي إلى طائفة دينية تسمى باليسوعية، وقد تلقى ديكارت فيها تعليمًا فلسفيًا راقيًا يعد من أرقى الأنواع في أوروبا وبدأ فيها ديكارت في تعلم الأدب، والمنطق، والأخلاق ثم الفلسفة وأخيرًا الرياضيات والفيزياء. ونال إجازة الحقوق من جامعة بواتيه حيث تخرج ديكارت من الكلية عام 1612 حاملًا شهادة الليسانس في القانون الديني والمدني عام 1616.
+
+                    وعلى عادة النبلاء في ذلك العصر، نصحه أبوه بالالتحاق بالجيش الهولندي، إذ كان هذا الجيش أفضل جيوش أوروبا نظامًا وخبرة، وكان يشكل مدرسة حربية لكل من أراد أن يتعلم فن الحرب. وبالفعل رحل ديكارت إلى هولندا عام 1618 وتعرف هناك على طبيب هولندي يدعى اسحق بيكمان، وكان متبحرًا في العلوم، وشجعه على دراسة الفيزياء والرياضيات وعلى الربط بينهما، وكانا يمارسان معًا طريقة جديدة في البحث تطبق الرياضيات على الميتافيزيقا، وترد الميتافيزيقا إلى الرياضيات، وقد كان لهذه الطريقة أبلغ الأثر في تطور ديكارت الفكري وفي تشكيل فلسفته، إذ أن منهجه ومذهبه الفلسفي لن يختلف كثيرًا عن طريقة البحث هذه.
+                    
+                    تطوع للخدمة في الجيش الهولندي عام1618 م، وخاض معه عدة معارك، وفي عام 1622 م عاد ديكارت إلى فرنسا وصفى جميع أملاكه ليستثمر الأموال في تجارة السندات المالية وقد أمنت له دخلا مريحا لبقية حياته. وفي الفترة بين 1628 م و1649 م عاش ديكارت حياة علمية هادئة في هولندا، وألف فيها معظم مؤلفاته، والتي أحدثت ثورة في مجالي الرياضيات والفلسفة.
+                    
+                    غادر ديكارت هولندا عام 1619 وذهب إلى ألمانيا، وهناك اكتشف الهندسة التحليلية التي اشتهر بها ووضع يده على قواعد منهجه الفلسفي. وفي عام 1620 بدأ في السفر متنقلًا بين العديد من المدن الأوربية لمدة تسع سنين، وفيها باع أملاكه التي ورثها عن أمه، وعرض عليه أبوه أن يشتري له وظيفة حاكم عسكري فرفض ديكارت وآثر أن يعيش حياة العزلة. وفي عام 1628 غادر فرنسا إلى هولندا حيث قضى فيها فترة كبيرة من حياته. والذي جعله يفضل هولندا أنها كانت آنذاك من أقوى وأغنى الدول الأوروبية وأكثرها ازدهارًا في العلوم والفنون. وفي عام 1629 بدأ ديكارت في كتابة رسالته «العالم Le Monde» وفيها يبحث في الطبيعة على أساس النتائج التي توصل إليها كوبرنيكوس وكبلر وجاليليو في النظام الشمسى ودوران الأرض حول الشمس. لكن حدث أن أدانت محكمة التفتيش والكنيسة الكاثوليكية في روما العالم الإيطالي جاليليو عام 1633، خوفًا من أن تؤدي آراء جاليليو الجديدة إلى سقوط الاعتقاد القديم بأن الأرض ثابتة في الكون والنجوم والكواكب تدور حولها وعندئذ خشى ديكارت أن يكون مصيره نفس مصير جاليليو، فلم يكمل الرسالة وكاد أن يحرق أوراقها وعزم على ألا يكتب أي شيء على الإطلاق، مما أدى إلى توقف ديكارت عن نشر بعض أفكاره، وفي عام 1643 م أدانت جامعة أوتريخت الهولندية الفلسفة الديكارتية. في هولندا تتلمذ في علوم الرياضيات على يد الأستاذ ياكب يوليوس في جامعة لايدن
+                    
+                    لكن سرعان ما أدرك ديكارت أنه لا يمكن أن يتوقف عن الكتابة نهائيًا وهو الفيلسوف الذي بدأ صيته ينتشر وعندما أحس أن الناس يتشوقون لمعرفة فلسفته عكف على الكتابة مرة أخرى، وأخرج ثلاث رسائل تدور كلها حول الموضوعات الرياضية والطبيعية وهي عن انكسار الأشعة والأنواء الجوية والهندسة، وقدم لها بمقال صغير وهو «مقال عن المنهج» عام 1636 وبلغ حد خوف ديكارت أن طبع الكتاب دون أن يكتب اسمه على الغلاف. وقرر ديكارت أن يضع مذهبًا للفلسفة ويطبقه على الميتافيزيقا فأخرج عام 1641 كتاب «التأملات في الفلسفة الأولى» الذي أهداه إلى الأميرة إليزابيث البلاتينية التي راسلها كثيرًا وأخذ يشرح لها فلسفته ويناقشها في أمور الأخلاق والسياسة. وعندما ذاعت شهرته وضع له ملك فرنسا راتبًا سنويًا يقدر بثلاثة آلاف جنيه عام 1647 لكنه لم يتلق منه شيئًا إذ آثر حياة العزلة. وفي عام 1648 تعرف على ملكة السويد كريستينا التي ناقشته طويلًا في فلسفته عبر سلسلة من الرسائل، وأصرت على دعوته للسويد ليكون عونًا لها في إدارة الحكم وشئون البلاد كمستشار، وعندما قبل الدعوة سافر إلى استوكهلم عاصمة السويد في أواخر عام 1649. وكانت الملكة تتردد عليه طويلًا لمناقشته في فلسفته، لكن الطقس البارد للسويد لم يكن مناسبًا لصحته، فأصيب بالتهاب رئوي، فرفض نصائح الأطباء وآثر أن يعالج نفسه بنفسه، وعندما اشتد عليه المرض توفى في 11 فبراير عام 1650.</p>
+            <p class="para3"><br>افعلْ ما يسعدك، فالأيام لا تعود.
+            <br>لا تثقْ بالبدايات، فأصدق الكلام يقال في اللحظة الأخيرة.
+            <br>لا يقدّر الأغبياء ما بأيديهم، حتى يضيع منهم.
+            <br>لكي نطوّر العقل يجب أن نتعلم أقلّ مما نتأمل.
+            <br>عندما يكونُ الشخص مكبّلًا بالسلاسل الحديدية منذ طفولته، سيعتقد أن هذه السلاسل جزءٌ من جسده و أنه يحتاج إليها كي يتمكن من أن يمشي.
+            <br>أنا معتاد على النوم، في أحلامي أتصوّر الأشياءَ نفسها التي يتخيلها المجانين وهم مستيقظون.
+            <br>الشكُّ أساس الحكمة.
+            <br>إذا أردت أن تكون باحثًا صادقًا عن الحقيقة، فمن الضروري أن تشك ما لا يقل عن مرة واحدة في حياتك بقدر الإمكان في كل الأشياء.
+            <br>الفرحة الوهمية غالبًا ما تكون قيمتها أكثر من الحزن الحقيقي.
+            <br>إن أعدلَ شيءٍ قسمة بين الناس هو العقل.
+            <br>إن اختلاف آرائنا لا ينشأ عن كون بعضنا أعقل من بعض، بل ينشأ عن كوننا نوجه أفكارنا في طرق مختلفة ولا نطالع الأشياء ذاتها.
+            <br>إذا أردت أن تكون باحثًا مخلصًا عن الحقيقة، فمن الضروريّ أن تشكّ في كلّ شيء لأقصى درجة ممكنة على الأقل مرة.
+            <br>لكي يتوصّلَ المرء إلى الحقيقة، ينبغي عليه مرة واحدة في حياته أن يتخلص نهائيًا من كل الآراء الشائعة التي تربّى عليها وتلقاها من محيطه، ويعيد بناء أفكاره بشكلٍ جذريّ من الأساس.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

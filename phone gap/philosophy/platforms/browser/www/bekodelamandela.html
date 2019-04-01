@@ -1,0 +1,334 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/mirandola.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">بيكو ديلا ميراندولا
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة:1463
+                <br>
+                مات سنة:1494
+            
+            <br>
+            <p class="ma3loma" style="font-weight:bolder;">
+                جيوفاني بيكو ديلا ميراندولا (24 فبراير 1463-17 نونبر 1494) كان فيلسوف، لاهوتي ومفكر إيطالي، ثالث أبناء عائلة أرستوقراطية. قام بدراسة وتلخيص أفكار أهم المدارس الفلسفية المعروفة في زمانه، خصوصا الأفلاطونية الحديثة، مدرسة المشائين، الفلسفة المدرسية والكابال المسيحية.
+
+            </p>
+        </p>
+        <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">تأسيس فلسفة بيكو ديلا ميراندولا</p>
+        <p class="para">
+                سيذهب بيكو إلى روما، طامحا نشر أطروحاته التسع مئة ومناقشتها مع أكبر علماء أوروبا. لكن، في طريقه إلى روما، خلال توقفه بمحطة أريتسو، سيقع في مشكلة متعلقة بقصة حب تجمعه مع زوجة أحد أفراد عائلة لورينزو دي ميديشي. وهي مشكلة كادت أن تذهب بحياته.بيكو سيحاول الفرار مع المرأة ولكن سيتم ملاحقته، جرحه والإلقاء به في السجن. لم يتمكن من الخروج من السجن إلا بمساعدة لورينزو. هذه الواقعة تظهر في نفس الوقت شخصية بيكو المتوهجة وقيمة الصداقة التي كانت تجمعه بلورينزو.
+<br>
+<br>
+                بيكو سيظل أشهر عديدة ببيرودجا، وبقرية فراتا بنواحيها، حتى يبرئ من جروحه. بهذا الموضع سيكتب لمارسيليو فيسينو بأنه اكتشف كتب كلدانية أعجبته. ببيرودجا، بيكو سيعشق دراسة الفكر اليهودي وكل ما يتعلق بالهرميسية، خصوصا بهرمس الهرامسة. في ذلك الوقت، كان الرأي العام العلمي يعتقد أن الهرمسية كانت معاصرة لكتب العهد القديم، وبذلك كانت الهرمسية تعطى لها أهمية كبيرة. بيكو يعتبر أول مثقف أوروبي أدخل الفكر الصوفي اليهودي في ساحة الفلسفة اليونانية، من خلال كتابه "Heptaple" الذي يهتم بالتأويل الصوفي اليهودي لقصة خلق العالم في سبعة أيام.
+                <br>
+<br>
+                بيكو كان يبني أفكاره على فلسفة أفلاطون، على غرار أستاذه مارسيليو فيسينو، بالرغم من احترامه لأراء أرسطو. بالرغم من أنه كان درس ككل معاصريه إنسانيات النهضة، التي تركز على الأداب اليونانية واللاتينية، كان يحاول أن تكون له نظرة ثقافية شاملة. الدليل على ذلك أنه في رسالة شهيرة كتبها سنة 1485 إلى هيرمولاؤو بربارو يدافع عن وجوب دراسة كتابات ابن رشد وابن سينا. مبتغى بيكو كان دائما هو نفسه، محاولة مصالحة فلسفة أفلاطون مع فلسفة أرسطو، لأنه كان متيقن أن الفيلسوفين يقولان نفس الخطاب بكلمات مختلفة. لذلك أصدقاؤه كانوا يسمونه (princeps concordiae)، معناها أمير الإتفاق، علما أن (Concordiae) كانت أيضا بلدة تمتلكها عائلته. زيادة على ذلك، كان بيكو يعتقد أن كل شخص مثقف عليه أن يدرس العبرية والتلمود، والفلسفة الهرميسية، لأنه كان يعتقد أنها كانت تؤدي إلى معرفة واحدة للله.
+                <br>
+<br>
+                سيختم كتابه المسمى خطاب في كرامة الإنسان، الذي أراد إضافته إلى أطروحاته التسع مئة، ثم سيذهب إلى روما للدفاع عنها. سينشرها بروما خلال دجنبر 1486 بعنوان (Conclusiones philosophicae, cabalasticae et theologicae) وسيقترح تمويل مجيء أي مثقف لنقاش الأفكار الموجودة في كتابه.
+                <br>
+<br>
+
+
+        </p>
+        <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">السجال مع الكنيسة، الفرار ثم الرجوع إلى إيطاليا</p>
+        <p class="para">
+
+                خلال فبراير 1487, سيعلن البابا إنوسنتيوس الثامن حظره للنقاش المقترح من طرف بيكو، وسيأمر بتكوين لجنة للتأكد من صحة الأطروحات المعرضة للنقاش. ثلاثة عشر منها ستعتبر غير صالحة من وجهة نظر الكنيسة. بيكو سيعطي كلمته كتابيا بأنه سيزيلها، رغم تأكيده شفويا بأنه لن يتراجع عليها. للدفاع عن نفس أطروحاته مرة أخرى سيؤلف كتاب وينشره سنة 1489, يحمل عنوان (Apologia J. Pici Mirandolani, Concordiae comitis)، ويهديه إلى لورينزو دي ميديشي. حينما سيعلم البابا بوجود هذا الكتاب سيأمر بإقامة محكمة تفتيش لإكراه بيكو بالتراجع أيضا عن أفكار كتابه الجديد، الشيء الذي سيضطر بيكو بفعله. من بعد ذلك، سيعلن البابا من جديد عن عدم صحة أطروحات بيكو ديلا ميراندولا، قائل عنها بالحرف: "جزء منها هرطقة، وجزء أخر كلام فاحش، كلها تقريبا إلا تكرير لأخطاء الفلاسفة الوثنيين...زيادة على أن بعضها يحمس اليهود في عجرفتهم، وأخيرا، متذرعا بالفلسفة، يحفز فنون مضادة للشريعة الكاثوليكية وللإنسانية." أحد نقاد بيكو سيدعي وقتذاك أن كلمة "كبال" هي اسم كاتب ملحد معادي لعيسى.
+
+
+        </p>
+
+            <p class="para2">
+                
+                منذ شبابه المبكر، ورث ثروة مهمة مكنته من الدراسة والسفر كما أراد. كان من تابعي الأفلاطونية الحديثة، من تلاميذ مارسيليو فيسينو، قبل أن يرجع إلى فلسفة المشائين. حاول أن يعطي صورة متناسقة لفلسفتي أفلاطون وأرسطو متماشيا مع العقيدة المسيحية، مما أداه إلى القذف بالهرطقة من طرف البابا إنوسنتيوس الثامن. هو أيضا من مؤسسي الكابال المسيحية.
+<br>
+                جيوفاني بيكو ديلا ميراندولا ازداد بفوسا، قرب مدينة مودينا. كان أصغر ابن لعائلة من النبلاء كانوا يحكمون أراضي في إحدى مناطق إيميليا رومانيا. درس منذ طفولته المبكرة اللغة اللاتينية، وربما أيضا اليونانية. بما أن أمه كانت تريد أن يخدم الكنيسة، ذهب ليدرس القانون اللاهوتي ببولونيا سنة 1477.
+                <br>
+                بعد موت أمه سنتين من بعد ذلك، بيكو سيعزف عن القانون اللاهوتي لابتداء دراسة الفلسفة بجامعة فيرارا. خلال إقامة قصيرة بمدينة فلورانسا، سيتعرف بأنجلو بوليزيانو، بالشاعر جيرولامو بينيفييني، وربما أيضا بالرهيب الدومنيكي سافونارولا. سيبقى مدى حياته مرتبط بأصدقائه الثلاث، حتى مع سافونارولا، ذو العقلية المضادة للفكر العقلاني. يعتقد أن كانت هناك فيما بين أنجلو بوليزيانو وبيكو علاقة حب تتعدى الصداقة. فيما بين سنتين 1480 و1482, واصل دراسته بجامعة بادوا، المعتبرة آنذاك كمركز رئيسي للفلسفة الأرسطوطاليسية بإيطاليا. بعد أن أتقن اللاتينية واليونانية، قرر دراسة العبرية والعربية ببادوا تحت إشراف إيلي ديل ميديكو، فيلسوف يهودي متخصص في دراسة فلسفة ابن رشد، الذي سيعرفه أيضا بمخطوطات أرامية. ديل ميديكو سيترجم له بعض المخطوطات اليهودية من العبرية إلى اللاتينية. ببادوا، بيكو سيكتب شعرا باللغتين الإيطالية واللاتينية، لكنه سيقوم بحرقه قبيل موته.
+                <br>
+                سنة 1485 سيذهب لجامعة باريس، التي كانت تعتبر آنذاك أهم مركز أوروبي لدراسة الإلاهيات والفلسفة، ومركز إشعاع لفلسفة ابن رشد. يمكن أن يكون بيكو قرر بباريس كتابة أطروحاته التسع مئة، ثم تقديمها في محاضرة عمومية. سنة 1486 سيرجع لفلورانسا، وسيتعرف على لورينزو دي ميديشي ومارسيليو فيسينو، اليوم نفسه الذي أكمل فيه هذا الأخير ترجمته إلى اللاتينية لأعمال أفلاطون تحت رعاية لورينزو. سيعجبان بشخصية بيكو. لورينزوسيساند بيكو طول حياته، خصوصا في المرحلات الصعبة التي سيعيشها. دون هذه المساندة، كان من المحتمل أن تضيع جميع مؤلفات بيكو.
+            <br>
+            </p>
+            <p class="para3">
+                الكائنات الروحية ، سواء من البداية أو بعد ذلك بوقت قصير ، تصبح ما يجب أن تكون إلى الأبد وإلى الأبد.
+                <br>
+                <br>
+                مهما كانت البذور التي يزرعها كل إنسان ، فسوف تنمو إلى مرحلة النضج وتحمل ثمارها. إذا كانت نباتية ، فسيكون مثل النبات.
+                <br>
+                <br>
+                فلماذا لا نعجب أكثر من الملائكة بأنفسهم وجوقات السماء المباركة؟
+               <br>
+               <br>
+                وإذا كان سعيدًا بالكثير من الأشياء غير المخلوقة ، فإنه ينسحب إلى مركز وحدته ، فإن روحه ، التي صُنعت مع الله ، في ظلمة الله المنفردة ، الموضوعة فوق كل شيء ، ستتجاوزها جميعًا.
+               <br>
+               <br>
+                ولكن ، عندما انتهى العمل ، ظل الحرفي متمنياً أن يكون هناك شخص ما يفكر في خطة عمل رائع ، وأن يحب جماله ، ويتساءل عن مدى اتساعه.
+                <br>
+                <br>
+                لم يكن جزء من حبه اللطيف هو الذي يجب أن يُكره على من يدين بكرم الله الإلهي فيما يتعلق بالآخرين أن يدينه فيما يتعلق بنفسه.
+               <br>
+               <br>
+                إذا رأيت فيلسوفًا يحدد كل شيء عن طريق السبب الصحيح ، فيجب عليك الخشوع: إنه كائن سماوي وليس من هذه الأرض.
+              <br>
+              <br>
+                من المسلم به أنه على الرغم من أن هذه الأسباب هي ، فهي ليست الأسباب الرئيسية ، أي تلك التي قد تدعي بحق لأنفسها امتياز 
+                أعلى درجات الإعجاب.
+              <br>
+              <br>
+                إن الله الآب ، المهندس المعماري الأعلى ، قد بنى بالفعل هذا المنزل الفلكي الذي نصبو إليه ، وهو أقدس هيكل لإلهه ، من خلال قوانين حكمته الغامضة.
+               <br>
+               <br>
+                لكن في إنشائها النهائي لم يكن جزءًا من قدرة الآب على الفشل كما لو أنه مرهق. لم يكن جزء من حكمته أن يتردد في مسألة ضرورية من خلال فقر المحامي.
+            <br>   
+            <br>
+            <br> 
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

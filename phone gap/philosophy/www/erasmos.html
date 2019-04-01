@@ -1,0 +1,262 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/erasmos.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">ايرازموس
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة: 1469
+                <br>
+              
+              مات سنة:1536
+              <br>ولد أعظم عالم بالإنسانيات عام 1466 أو عام 1469 في روتردام أو بالقرب منها وهو الابن الثاني غير الشرعي لجيرارد وهو كاتب، وأمه مارجريت ابنة طبيبة وأرملة. ويبدو أن الأب رسم قسيساً عقب هذه الكارثة. الاسم ديزيدريوس أرازموس معناه الحبيب المرغوب فيه. ولقد علمه مدرسوه الأوائل القراءة والكتابة باللغة الهولندية ولكنه عندما ذهب ليدرس مع أخوة الحياة المشتركة في ديفنتر غرم لأنه كان يتحدث بلغته الوطنية فقد كانت اللغة اللاتينية هناك "الزاد الرئيسي للتعليم" وكانت التقوى تراعى بحزم كوسيلة من وسائل التربية والتهذيب- ومع ذلك فإن الأخوة كانوا يشجعون على دراسة كلاسيكيات وثنية مختارة وبدأ ايراسموس في ديفنتر يمسك بزمام اللغة اللاتينية والأدب بصورة مذهلة
+
+              بعد وفاة والده وجهه الاوصياء ان يلتحق للانخراط في سلك الرهبنة لأنها لا تحتاج إلى امتلاك شيء على الإطلاق. وأخذ دسيدريوس على نفسه العهود كأي راهب أوغسطيني في ديراماوس في ستين. وحاول أن يحب حياة الدير جهد استطاعته بل إنه كتب مقالا بعنوان: De contemptu mundi "تأملات في الوجود"، ليقنع نفسه بأن الدير هو المكان المناسب له.
+              
+              لكــنه لم يستمر. كانت حياة الدير بنظامه وواجباته الصارمة خانقة بالنسبة لايراسموس الذي منحته معرفته الاستثنائية لللاتينية الفرصة لمغادرة الدير. سافر كعالِم مستقل عبر مناطق كبيرة في أوروبا حيث اعتمد في معيشته على دخله من كتاباته والهدايا المقدمة إليه من العدد المتزايد من المعجبين. بقي ايراسموس على اتصال مع الأصدقاء والعلماء ذوي نفس التفكير والرواة عبر شبكة من المراسلات المكثّفة.
+</br>
+            </p>
+
+            <p class="para">
+                    في عام 1500 كتب أديجيا (Adagia)، واحدة من أكثر المؤلفات مبيعاً في العالم، كمجاملة لطيفة للمطبعة التي كانت ما تزال جديدة. قدّمت هذه المجموعة من الأمثال الكلاسيكية للقراء تقدماً سريعاً في نمط الحياة وطريقة التفكير بأعضاء الحركة الإنسانية. بالإضافة إلى أن ايراسموس نشر أيضاً كتباً عن الايتيكيت وكتب إرشاد لرؤساء الدولة وحوارات وكرّاسات هدفت إلى تعليم الأسياد والعامة ليكونوا مسيحيين صالحين وعاقلين.
+
+                    كان ايراسموس أول من طبّق الطريقة النقدية الإنسانية على المؤلفات المسيحية، إذ درس اللغة اليونانية خصيصاً من أجل قراءة مؤلفات المؤسسين الأوائل للكنيسة ونصوص العهد القديم باللغة الأصلية. ونتج عن هذا سلسلة من النسخ النقدية الجديدة للمؤلفات المسيحية المبكّرة، بما فيها نسخة جديدة من العهد الجديد باليونانية مع ترجمة جديدة إلى اللاتينية. مع هذا العهد الجديد باليونانية (Novum Instrumentum) أبعد ايراسموس نفسه جلياً عن الترجمة الرسمية للكنيسة (Vulgate) ودافع عن الحق لتبني طريقة نقدية في تناول الإنجيل بهدف تعزيز القدرة على فهم العقيدة. أمِل ايراسموس أن يتمكن كل واحد من الاقتباس من الإنجيل، كمثل المزارع خلف محراثه والحائك ومغزله والمسافر في رحلته، واعتقد أنه يجب حتى على النساء قراءة الإنجيل. كان هدفه الأعلى بلوغ السكينة والتقوى الخالصة المتأصلة في التفكير الداخلي
+           </p>
+
+            <p class="para2"> حياته</p>
+            <p class="para3">
+                <br>من يُتقن فن العيش مع نفسه, لا يعرف البؤس</br>
+                <br>أتمنى أن أموت في وقت العمل .. لا وقت الراحة</br>
+                <br>اعطني الضوء وسيختفي الظلام بعدها من تلقاء نفسه</br>
+                
+                مقولات</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

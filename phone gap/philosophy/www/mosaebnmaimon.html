@@ -1,0 +1,389 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+        direction: rtl;
+        color: white;
+        width: 110%;
+        font-family: Amiri;
+        font-size: 19px;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123" onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/mosa ebn-maymon.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">موسي ابن ميمون
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة:1135
+                <br>
+                مات سنة:1204
+                <br>
+                <p class="ma3loma" style="font-weight:bolder;">
+                    أبو عمران موسى بن ميمون بن عبيد الله القرطبي (بالعبرية: מֹשֶׁה בֶּן־מימוּן؛ 30 مارس 1135 - 13 ديسمبر
+                    1204) المشهور في الغرب باسم ميمونيديس (بالإغريقية: Μαϊμωνίδης) ويشار إليه كذلك باسم "رمبم"
+                    (نوتريقون: הרמב"ם ربي مشه بن ميمون أي الحاخام موشيه بن ميمون) واشتهر عند العرب بلقب الرئيس موسى كان
+                    فيلسوفا يهوديا سفارديا وأصبح من أكثر علماء التوراة اجتهادا ونفوذا في العصور الوسطى. في زمنه، كان
+                    كذلك عالم فلك وطبيبا بارزا. وُلد في قرطبة ببلاد الأندلس في القرن الثاني عشر الميلادي، ومن هناك
+                    انتقلت عائلته سنة 1159 إلى مدينة فاس المغربية حيث درس بجامعة القرويين، ثم انتقلت سنة 1165 إلى
+                    فلسطين، واستقرت في مصر آخر الأمر، وهناك عاش حتى وفاته. عمل في مصر نقيبًا للطائفة اليهودية، وطبيبًا
+                    لبلاط الوزير الفاضل أو السلطان صلاح الدين الأيوبي وكذلك استطبّه ولده الملك الأفضل علي. كان أوحد
+                    زمانه في صناعة الطب ومتفننًا في العلوم. يوجد معبد يحمل اسمه في العباسية بالقاهرة.
+
+                </p>
+            </p>
+            <p class="para" style="font-weight:bolder; font-size: 25px;     color: rgb(255, 255, 255);">مبادئ الإيمان
+                الثلاثة عشر</p>
+            <p class="para">
+
+                تضمن كتاب السراج والمشناه توراة، مبادئ الإيمان الثلاثة عشر الشهيرة التي وضعها ابن ميمون للديانة
+                اليهودية، والتي بات لزامًا على كل يهودي أن يؤمن بها جميعًا، وهي:
+                <br>
+
+                الله موجود، وهو المدبر للمخلوقات كلّها، و الصانع لكل شيء في ما مضى والآن وفي ما سيأتي.
+                <br>
+
+                لا يشبه الله في وحدانيته شيء، وهو وحده الإله منذ الأزل وإلى الأبد.
+                <br>
+                الله روح وليس جسمًا، ولا شبيه له على الإطلاق.
+                <br>
+                الله أزلي، فهو الأول والآخر.
+                <br>
+                الله وحده من ينبغي أن يُعبد، ولا جدير بالعبادة غيره.
+                <br>
+                الوحي لا يأتي إلا عبر أنبياء الله، وكلامهم كلّه حق.
+                <br>
+                نبوة موسى حق، وهو أبو الأنبياء جميعًا، من جاء منهم قبله، ومَن جاء بعده.
+                <br>
+                التوراة التي بين أيدينا اليوم هي التي أوحى الله بها إلى موسى.
+                <br>
+                التوراة التي جاء بها موسى لا يمكن استبدالها ولا تغييرها، سواء كان ذلك بالإضافة أو الحذف.
+                <br>
+                معرفة الله بأفكار البشر وأفعالهم.
+                <br>
+                يجزي الله الحافظين لوصاياه، ويعاقب مخالفيها.
+                <br>
+                مجيء المسيح اليهودي )المشيح( مهما طال انتظاره.
+                <br>
+                قيامة الموتى بإرادة الله.
+                <br>
+                <br>
+                وتبيِّن هذه العقائد بوضوح تأثر ابن ميمون بعلم التوحيد، وعلوم الكلام، والمتصوفة المسلمين
+
+
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">أهم مؤلفاته</p>
+            <p class="para">
+                مشناه توراه.
+                <br>
+                <br>
+                دلالة الحائرين.
+                <br>
+                <br>
+                اختصار الكتب الستة عشر لجالينوس.
+                <br>
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">موقفه من الإسلام
+            </p>
+            <p class="para">
+                ويرى موسى بن ميمون أهم اللاهوتيين اليهود في العصور الوسطى أن محمدا قد انتقى بعض التعاليم اليهودية في
+                رسالته وأضاف إليها عبادات أخرى. ويرى ميمون أن محمداً كان نبياً كاذباً ويعتبر ادعاءه النبوة غير ذي
+                مصداقية لأنه يخالف التقليد التوراتي اليهودي. كما يرى أن كون الرسول أمياً يمنعه من الوصول لمرتبة
+                الأنبياء.
+            </p>
+            <p class="para2">وُلِد موسى بن ميمون في قرطبة سنة 1135 ميلادية، وتُوفيَ في القاهرة سنة 1204 ميلادية. اشتهر
+                بكونه أهم شخصية يهودية خلال العصور الوسطى وهو من عائلة يهودية شمال أفريقية من المغرب تُعرف بعائلة الباز
+                وهي عائلة يهودية كبيرة وعريقة وذات صيت كبير[من صاحب هذا الرأي؟] . هاجر بعض أفرادها إلى غزة، سوريا،
+                الأردن، العراق ومصر خلال عصور مختلفة وبعضها الآخر انتقل إلى فلسطين. ولموسى بن ميمون تصانيف شهيرة مكتوبة
+                باللغة العبرانية[هل المصدر موثوق؟]. وله أيضًا في اللغة العربية كتاب "دلالة الحائرين" الذي طُبع في باريس
+                من سنة 1865 إلى 1866م مع ترجمة فرنسية وشرح باعتناء العلامة منك . يتناول الكتاب توفيق الفلسفة مع التوحيد
+                و التفسير باستخدام الفلسفة وعلم الكلام. وله أيضًا في اللغة العربية "كتاب الشرائع " وترجمها إلى العبرانية
+                العلامة شالومن بن يوسف بن أيوب ، طُبع جزء منه في لايبزيك (ألمانيا) سنة 1881م في 63 صح فيها المتن العربي
+                مع الترجمة العبرانية مع ترجمة أخرى ألمانية وشروح باعتناء العلامة "بارتز" .وله أيضًا مقالة في تدبير الصحة
+                وكتاب فصول في علم الطب استخرجه من مُصنفات جالينوس اليوناني.
+                <br>
+
+                هرب موسى بن ميمون من موحدي الأندلس التي كانت مستبدة ، إلى القاهرة، حيث كان يحكم الأمير صلاح الدين
+                الأيوبي – الذي حرّر مدينة القدس بعد بضع سنين من الصليبيين، .وأعاد أكبر أجزاء البلاد (فلسطين) إلى حكم
+                الخلافة مرة أخرى. وفي القاهرة تعلم موسى بن ميمون السريانية واليونانية، وبعد سبع سنوات أصبح أستاذًا في
+                المدرسة التي أنشأها يهود مصر في الفسطاط لتعليم الديانة اليهودية والفلسفة والرياضيات والطب.
+                <br>
+
+                وقد عُرف هذا العالم لدى العرب بأبي عمران موسى بن ميمون عبيد الله. وكان من أبرز تلامذته يوسف بن عقنين
+                المعروف عند العرب بأبي الحجاج يوسف بن اسحاق السبتي المغربي، والذي اشتهر كطبيب وفلكي بارع، وكذلك سعديا بن
+                بركات.
+                <br>
+
+                عاش ابن ميمون في المحيط العربي والإسلامي، فقد تلقَّى العلم على يد ثلاثةٍ من العلماء المسلمين، حيث تلقَّى
+                مباشرةً من ابن الأفلح ومن أحد تلاميذ ابن الصائغ. وتلقى من ابن رشد بشكلٍ غير مباشر، حين عكف - كما يذكر
+                ابن ميمون نفسه - على دراسة مؤلفات ابن رشد طيلة ثلاثة عشر سنة.
+                <br>
+
+                والمطالِعُ في أحد أهم كُتب ابن ميمون : دلالة الحائرين ، لا يجد إلا صدى لأفكار فلاسفة الإسلام وعلماء
+                الكلام وخاصةً الأشاعرة . ولذلك فحين ألَّف إسرائيل ولفنسون كتابه "موسى بن ميمون حياته ومصنفاته " ، وهو
+                الكتابُ المنشور بالعربية في القاهرة سنـة 1936 م كتب الشيخ مصطفى عبد الرزاق مقدمة الكتاب فقال فيها : إن
+                موسى ابن ميمون يعدُّ من الفلاسفة المسلمين! ثم ذكر العديد من الأدلة المؤيدة لذلك. وفي مقدمة تحقيقه لكتاب
+                " دلالة الحائرين" يقول الدكتور/ حسين آتاى: إذا أخذنا في الاعتبار أنَّ الشهرستاني قد عدَّ حنين بن إسحاق
+                النصرانى، فيلسوفاً إسلاميًّا ؛ فإنه لا وجه للتفرقة بينه وبين موسى بن ميمون اليهودي . والدارس للثقافة
+                الإسلامية حين يقرأ كتابه "دلالة الحائرين" يرى أن موسى بن ميمون حتى في مناقشاته لنصوص التوراة، إنما يصدر
+                عن فكرٍ وثقافةٍ إسلامية فقد عاش طوال حياته بين مسلمين . ويلاحظ أنه عندما ينتقد المتكلمين المسلمين يكون
+                نقدُه لهم بأسلوبٍ خالٍ من الشدة التي ينتقد بها المتكلمون المسلمون بعضهم بعضًا، وأنه ينقد بني دينه بشكلٍ
+                أشد. إذاً، فابن ميمون يُعتبر فيلسوفاً إسلاميّاً. وهذا ما يعتبره أيضا المؤرخون الأوروبيين .
+                <br>
+
+                وقد توفي موسى بن ميمون سنة 1204 وهو في السبعين من عمره.</p>
+
+            <p class="para3">
+
+                يجب على كل شخص أن يرى نفسه كما لو أن العالم بأسره في توازن دقيق ، وبفعل واحد ، يمكنه أو يمكنها قلب
+                الموازين.
+                <br>
+                <br>
+                علم لسانك أن تقول "لا أعرف" وسوف تتقدم.
+                <br>
+                <br>
+
+                يجب أن تقبل الحقيقة من أي مصدر يأتي.
+                <br>
+                <br>
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

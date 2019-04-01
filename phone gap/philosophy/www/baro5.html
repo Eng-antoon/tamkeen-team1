@@ -1,0 +1,369 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/baroo5.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">باروخ سبيتوزا
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة: 1632
+                <br>
+                مات سنة:1677
+            </p>
+
+            <p class="para">
+
+                الاسقف جورج بيركلي هو فيلسوف ايرلاندي من عائلة التجريبيون الذين إنجازهم الرئيسي كان تنظير المثالية
+                التجريبية
+                أو
+                اللا أدائية .بالنسبة لبركلي, فان الأشياء التي لا تملك كلية التفكير ينظرون إليه ، والعقل (إنساني أو إلهي)
+                هو
+                الذي
+                يدركهم . تظهر نظرية بيركلي أن ,الأفراد لا يعرفون إلا أحاسيس وأفكار الأشياء , لا التجريد مثل المادة أو
+                الكيانات
+                العامة. قام بيركلي بالعديد من الأعمال ، أشهرها بلا شك مبادئ المعرفة الإنسانية (1710)و الحوارات الثلاثة
+                بين
+                (هيلاس و فيلونوس ).في عام 1734 نشر The Analyst (المحلل)، وهو نقد لأسس العلم ، والتي كان لها تأثير كبير
+                على
+                التطوير الإضافي للرياضيات. تمت تسمية مدينة بيركلي ، كاليفورنيا ، على شرفه ، ولكن نطق اسمه تطور ليتناسب
+                مع
+                اللغة
+                الإنجليزية الأمريكية.سميت كلية بيركلي في جامعة ييل أيضاً باسمه.
+                موقع اخر:
+                جورج بركلي فيلسوف إيرلندي من أصل إنكليزي. ولد في كيلكني بإيرلندة، وتلقى علومه الأولى في مدرسة الدوق
+                أورموند
+                بكيلكني درس الرياضيات واللغة والفلسفة، واطلع على آراء لوك التجريبية في دبلن 1700-1704 في كلية التثليث
+                التي
+                عين
+                فيها سنة 1707 زميلاً لعدة سنوات. انتقل إلى لندن سنة 1713 واعظاً لكنيسة اللورد بيتر بورو وتجوَّل في بعض
+                أنحاء
+                أوربة: فرنسة وإيطالية وصقلية ـ في سنوات 1716-1720، عاد بعدها إلى لندن فدبلن سنة 1721، حيث واصل عمله في
+                كلية
+                التثليث. ثم عاد إلى إيرلندة سنة 1734 وصار أسقفاً لكنيسة كلوين حتى سنة 1752. غادر بعدها إلى أكسفورد حيث
+                وافته
+                المنية.
+                أهم كتبه «محاولة نحو نظرية جديدة في الإبصار» وهو أول مؤلفاته الفلسفية. وله أعمال أخرى أشهرها «رسالة في
+                مبادئ
+                المعرفة الإنسانية» و«الخضوع السلبي» و«ثلاث محاورات بين هيلاس وفيلونوس» و«في الحركة»، وهو مؤَلف كتبه
+                بركلي
+                باللغة
+                اللاتينية، و«السيفرون أو الفيلسوف الصغير»، و«المحلل»، و«الحلقات: سلسلة من التأملات الفلسفية ـ وأبحاث في
+                فوائد
+                ماء القطران» وهو آخر أعمال بركلي الفلسفية.
+                يعد بركلي أحد ممثلي النزعة التجريبية، ومؤسساً للفلسفة المثالية الذاتية في القرن الثامن عشر، يصوغها ضمن
+                إطار
+                نظرياته اللامادية التي تجمع في آن واحد بين المثالية والتجريبية ، وبين اللامادية والحس المشترك وبين
+                المثالية
+                (الذاتية) والواقعية الإبستيمولوجية، ليطرح نظرية في المعرفة تستمد قوامها من آراء معاصريه هوبز وبيكون
+                ولوك،
+                فتجعل
+                من التجربة مصدراً للمعرفة، وتنكر آراء سابقيه: ديكارت، وأفلاطونيي كامبردج، حول وجود أفكار فطرية أو معرفة
+                قَبْلية.
+                وعلى تأثره بأفكار لوك فإنه عارض ميتافيزيقيته ونظرته الميكانيكية للعالم، وعارض أفكار نيوتن الرياضية،
+                ونظريته
+                عن
+                المكان المطلق والجاذبية، وكذلك نظرية ليبتنز عن القوة وحساب اللامتناهيات، التي تعزو حركة الأجسام المادية
+                إلى
+                عللها الطبيعية، في حين يردها بركلي إلى جوهر روحي نشيط وفعّال، هو الله.
+                وتختلف مثالية بركلي عن المثالية العقلية، كما تتعارض مع تيار الفلسفة التجريبية الإنكليزية، الذي بدأ مع
+                تمييز
+                لوك
+                الإدراك الحسي من التأمل العقلي، وانتهى بتفرقة هيوم بين الانطباعات الحسية والأفكار .
+                ينطلق بركلي، بوصفه فيلسوفاً تجريبياً، من مبدأ لوك القائل إنّ مصدر معرفتنا هو الإحساس والانعكاس لكنه يفهم
+                الإدراك
+                الحسي بطريقة مغايرة، فهو يدحض أولاً تمييز لوك الكيفيات الأولية من الكيفيات الثانوية ، لزعم بركلي أن
+                المادة
+                ترجع
+                إلى مجموعة من الصفات الحسية ، التي لا فرق فيها بين صفات أولية (الامتداد والشكل) وصفات ثانوية (الحرارة
+                واللون)،
+                وذلك لتلازم وجودهما معاَ. وأن هذه الصفات كامنة في إحساساتنا الذاتية وليست في الأشياء ذاتها والمادة لا
+                توجد
+                إلا
+                حين يدركها العقل. وأساس نقده للمادة هو المذهب الاسمي المثالي.
+                وترتكز نظرية بركلي على مبدأ يوحدّ الوجود مع الإدراك الحسي، ويربط حقلي الإبستيمولوجية والأنطولوجية فتقرر
+                أن
+                «وجود
+                الشيء هو إدراكه» وهذا ينطوي على مبالغة كبيرة وانتقال غير مشروع من نظرية المعرفة إلى الوجود، إذ يتطابق
+                فيه
+                الفكر
+                والواقع، فيقضي بذلك على ثنائية ديكارت القائمة على التفرقة بين الروح والمادة. وتصبح الأشياء ذاتها مجرد
+                انفعالات
+                ذاتية، مجموعة إحساسات أو أفكار. فضلاً عن أنه يؤمن ـ كديكارت ـ بأن هذه الأفكار ليست نُسخاً عن الأشياء
+                الخارجية.
+                وبهذا يرفض بركلي نظرية الإدراك الحسي التمثيلي ، ويعتقد بأن نظريته التجريبية الحسية تنسجم تماماً مع نظرية
+                الحس
+                المشترك، إلا أنها تتناقض مع الشكيّة المادية، ومع ثنائية الفكر والواقع. وهذا ما يدفعه لإلغاء أي وجود مادي
+                مستقل
+                عن العقل. الأمر الذي صبغ مذهبه بنزعة «الأنانة» . لكن كمحاولة لتجنّب الأنانة، تتوسط ميتافيزيقية بركلي
+                معتقداته
+                الدينية، فيقرّ بوجود تكثّر للجواهر الروحية ووجود عقل كوني، هو الله. حيث يميز بين نوعين من الأفكار: أفكار
+                كامنة
+                في العقل، هي أفكار المخيلة والتذكر، وهي أفكار منفعلة سلبية تصدر عن جوهر روحي متناه هو النفس، فتكون النفس
+                علّة
+                هذه الأفكار.وأفكار واردة من الخارج، وهي أفكار الحواس والانعكاس، وتصدر عن جوهر روحي فعال لا متناهٍ هو
+                الله،
+                وليس
+                عن المادة. و هكذا يكون الله هو العقل المدرك المطلق، وهو محل الأفكار، ومصدر الوجود الحقيقي للأشياء. وما
+                ندركه
+                بحواسنا من أفكار هو تمثّلات عن أفكار الله الأزلية التي نعي بها إرادة الله وفعله ووجوده، وذلك بتجلّي نفسه
+                في
+                نظام
+                الطبيعة المطرد. فلا حتمية إذن في قوانين الطبيعة.
+                اتخذ بركلي مواقف مثالية قريبة من الأفلاطونية الجديدة، حيث أقر بوجود خالد للأفكار في عقل الله، ليهدم
+                مفهوم
+                الريبية والمادية . فكان بركلي بهذا مثالياً ذاتياً أكثر من كونه تجريبياً، وحافزاً لقيام تجريبية هيوم
+                الشكية،
+                وباعثاً على نشوء المثالية الألمانية بكل أشكالها: المثالية الذاتية عند فيخته، والموضوعية عند شيلنج،
+                والمطلقة
+                عند
+                هيغل. فتعرضت فلسفته في القرن العشرين لنقد لينين في كتابه «المادية والنقدية التجريبية».
+            </p>
+
+            <p class="para2"> .......حياته</p>
+            <p class="para3">....... مقولات</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

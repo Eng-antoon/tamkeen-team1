@@ -1,0 +1,286 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/7alag.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">الحلاج
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة: 858
+                <br>
+                مات سنة:   26 مارس 922 ميلادية بعد أمر قتله
+            </p>
+
+            <p class="para">
+                    كان للحلاج الكثير من الكتب والرسائل لكن بعد محاكمته أحرقت أغلب كتبه إلا ما أنقذه بعض مريدوه و هما كتابان أحدهما ديوان الشعر المسمى باسمه والآخر هو كتاب الطواسين.
+            </p>
+
+            <p class="para2"> 
+                    نشأ بواسط وكانت واسط، مركزًا من مراكز الإشعاع الفكري والروحي في فارس، أسس بها الأشاعرة مدرستهم الكبرى، وأوجد فيها العلامة أبو علي الجبائي، نشاطًا ثقافيًّا، وتيارًا علميًّا حرًّا، يخضع كل شيءٍ لمنطقه وطرائفه.
+                    كما أقام بها الحنابلة مدرسة للقرَّاء، ومعهدًا للحديث، واتخذوا من مساجدها مقاعد للبحث والدرس، والجدل والحوار.
+                    <br>
+                    وفي هذا الجو العلمي الحر الحي، نشأ الحلَّاج، ولفت إليه الأنظار منذ طفولته، بذكائه المتوثب اللماح، وشفا فيه روحه، وتفتح قلبه، وحبه وإقباله على ينابيع العلم والمعرفة، حتى ليحدثنا تاريخه، أنه قرأ القرآن الكريم على أعلام القرَّاء في عصره، وحفظه وجوده، وهو في العاشرة من عمره، وتعمق في فهم معانيه، تعمقًا ليس من طبيعة الطفولة الغضَّة.
+                    كما اشتُهر بالإرادة القوية الموجهة، والرياضات والمجاهدات الروحية الشاقة، والزهد فيما يقبل عليه لِدَاتُه من شئون الحياة، ولهو الطفولة، والاستفراق الكامل في الصلاة والتأمل والتعلق بالدراسات التي تتناول المعرفة الروحية، وما تحتوي عليه هذه المعرفة من أنوارٍ وأسرارٍ.
+                    وأقبل الحلَّاج بكل ما في قلبه من أشواقٍ، وما في روحه من إشراقٍ على علوم عصره من فقهٍ وتوحيدٍ وتفسيرٍ وحديثٍ وحكمةٍ وتصوفٍ. ولكنه كما يقول ماسنيون: "سرعان ما راح يبحث عن المعنى الرمزي الذي يرفع دعاء الروح إلى الله".  كان الحلَّاج يحس في أعماقه دائمًا تلهفًا واشتياقًا إلى معرفةٍ أرق وأدق مما يقرأه في صفحات الكتب، ومما يستمع إليه في دروس العلم والعلماء.
+                    معرفة تدنيه وتقربه من الله، وتمنحه المعراج الذي تصعد عليه روحه إلى هداه.
+                    <br>
+                    كان يُحِسُّ أن لروحه عند الصفاء والنقاء، سبحاتٍ ملهماتٍ، تترقرق فيها معانٍ مشرقاتٌ، وأن قلبه عندما يأخذه الوجد الإلهي، والحب الرباني، تتفتح فيه منافذ يُطِلُّ منها على ملكوتٍ رائع الجلال والبهاء، تلتمع في آفاقه حقائق أعلى وأسمى مما يتجادل فيه الناس ويتخاصمون.
+                    وإذن فليعمل الحلَّاج على أن ترتفع روحه بالحب ارتفاعًا يجعلها أهلًا لهذه الحقائق التي يهبها الله لمن ارتضى من عباده، واصطفى من خلقه.
+                    وانقطع الحلَّاج عن دروسه، وأقبل على ملكوت السماء والأرض يقلب وجهه في آفاقهما، ويتأمل أسرارهما، ويقرأ بين سطورهما الخفية أسرارًا وأسرارًا.
+                    وعكف على روحه وقلبه، بالتصفية والمجاهدة، حتى أعطيا كنوزهما، وتفجَّرا معرفةً ونورًا.
+                    ونذر نفسه لربه سبحانه، وأقبل عليه بكل ذاته، وقد اشتعلت أحاسيسه بالوجد، والتهبت عواطفه بالحب، إنه يستهدف ارتباط قلبه بالله، وقرب روحه منه، قربًا يفنى فيه عن كل شيء، ليبقى له بعد ذلك كل شيءٍ.
+                    إنه فناء الخالدين بربهم، وهو فناءٌ وخلودٌ، لا يعرفه إلا الأفق الصوفي.
+                    وأخذ الحلَّاج نفسه بهذا المنهج أخذًا عنيفًا قاسيًا، وألزم نفسه به طوال حياته، حتى غدا طابعه الذي تشكَّل به وجوده المادي والروحى.
+                    <br>
+                    روى إسماعيل بن علي الخطبي في " تاريخه " قال: وظهر أمر رجل يعرف بالحلاج يقال له : الحسين بن منصور، وكان في حبس السلطان بسعاية وقعت بهِ، وذلك في وزارة علي بن عيسى الأولى وذكر عنه ضروب من الزندقة ووضع الحيل على تضليل الناس من جهات تشبه الشعوذة والسحر وادعاء النبوة، فكشفه علي بن عيسى عند قبضه عليه وانتهى خبره إلى السلطان - يعني الخليفة العباسي المقتدر بالله - فلم يقر بما رمي به من ذلك فعاقبه وصلبه حياً أياماً متوالية في رحبة الجسر في كل يوم غدوة وينادى عليه بما ذكر عنه ثم ينزل به ثم يحبس. فأقام في الحبس سنين كثيرة ينقل من حبس إلى حبس حتى سجن في النهاية بدار السلطان، فاستغوى جماعة من غلمان السلطان وموه عليهم واستمالهم بضروب من حيلهِ حتى صاروا يحمونه ويدفعون عنه ويرفهونه، ثم راسل جماعة من الكتاب وغيرهم ببغداد وغيرها فاستجابوا لهُ، وتراقى به الأمر حتى ذكر أنه ادعى الربوبية وسعي بجماعة من أصحابه إلى السلطان فقبض عليهم ووجد عند بعضهم كتبا تدل على تصديق ما ذكر عنهُ، وأقر بعضهم بلسانهِ بذلك وانتشر خبره وتكلم الناس في قتلهِ، فأمر أمير المؤمنين بتسليمه إلى حامد بن العباس وأمر أن يكشفه بحضرة القضاة والعلماء ويجمع بينه وبين أصحابه فجرى في ذلك خطوب طوال؛ ثم استيقن السلطان أمره ووقف على ما ذكر له عنه، فأمر بقتله وإحراقه بالنار، فأحضر مجلس الشرطة بالجانب الغربي يوم الثلاثاء لسبع بقين من ذي القعدة سنة تسع وثلاثمائة فضرب بالسياط نحوا من ألف سوط وقطعت يداه ورجلاه وضربت عنقه وأحرقت جثته بالنار ونصب رأسه للناس على سور الجسر الجديد وعلقت يداه ورجلاه إلى جانب رأسه، ويذكر مصطفى جواد أنه بعد حرق جثته تم دفن ما تبقى منها في القبر المعروف في بغداد.
+                    
+            </p>
+            <p class="para3">
+            <br> دينى لنفسى ودين الناس للناس
+            </br>
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+   
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

@@ -1,0 +1,356 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+        direction: rtl;
+        color: white;
+        width: 110%;
+        font-family: Amiri;
+        font-size: 19px;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123" onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مؤلفاته</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="images/unkown.jpg">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">الحكيم الترمذي
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                محمد بن علي بن الحسن بن بشر، أبو عبد الله، الحكيم الترمذي: باحث، صوفي، عالم بالحديث وأصول الدين.
+                <br>
+                <br>
+                ولد سنة: 820
+                <br>
+                مات سنة:320
+
+
+            </p>
+
+            <p class="para">
+                من أهل (ترمذ) نفي منها بسبب تصنيفه كتابا خالف فيه ما عليه أهلها، فشهدوا عليه بالكفر. وقيل: اتهم باتباع
+                طريقة الصوفية في الإشارات ودعوى الكشف. وقيل فضل الولاية على النبوة، ورد بعض العلماء هذه التهمة عنه.
+                وقيل: كان يقول: للأولياء خاتم كما أن للأنبياء خاتما. وقال السبكي: فجاء إلى بلخ - أي بعد إخراجه من ترمذ -
+                (فقبلوه) لموافقته إياهم على المذهب. وأخطأ بعض مؤرخيه من المتأخرين بأن جعل العبارة: جاء إلى بلخ (فقتلوه)
+                وهذا لا يتفق مع بقية ما قاله السبكي من موافقتهم إياه على المذهب. وفي (لسان الميزان) أن أهل ترمذ هجروه في
+                آخر عمره لتأليفه كتاب (ختم الولاية وعلل الشريعة) وأنه حمل إلى بلخ فأكرمه أهلها وكان عمره نحو تسعين سنة.
+                <br>
+                واضطرب مؤرخوه في تاريخ وفاته، فمنهم من قال سنة 255 وسنة 285 هـ، وينقض الأول أن السبكي يذكر أنه حدث
+                بنيسابور سنة 285 كما ينقض الثاني قول ابن حجر: إن الأنباري سمع منه سنة 318 أما كتبه، فمنها (نوادر الأصول
+                في أحاديث الرسول - ط) و (الفروق - خ) يفرق فيه بين المداراة والمداهنة، والمحاجة والمجادلة، والمناظرة
+                والمغالبة، والانتصار والانتقام الخ، وهو فريد في بابه.
+                <br>
+
+                وله كتاب (غرس الموحدين) و (الرياضة وأدب النفس) و (غور الأمور) و (المناهي) و (شرح الصلاة) لعله (الصلاة
+                ومقاصدها) و (المسائل المكنونة) وكتاب (الأكياس والمغترين) و (بيان الفرق بين الصدر والقلب والفؤاد واللب)
+                رسالة طبعت سنة 1958 مصدرة بترجمة حسنة لمؤلفها وبأسماء 57 كتابا أو رسالة من تصنيفه، و (العقل والهوى) [ ثم
+                طُبع ] و (العلل) رسالة، وفي الظاهرية، بدمشق بعض رسائله
+                <br>
+
+                كتب المصنف بالموقع
+                <br>
+
+                العقل والهوى
+                <br>
+
+                نوادر الأصول في أحاديث الرسول
+                <br>
+
+                الأعضاء والنفس
+                <br>
+
+                الأمثال من الكتاب والسنة
+                <br>
+
+                المنهيات
+                <br>
+                رياضة النفس
+
+                <br>
+                أدب النفس
+                <br>
+                ختم الأولياء.
+                <br>
+                تذكرة الأولياء.
+                <br>
+                الرياضة وأدب النفس
+                <br>
+
+            </p>
+
+            <p class="para2">عاش الترمذي للحديث و رحل اليه حيثما وجد فأخذ العلم و سمع من الخرسانيين و العراقيين و
+                الحجازيين ، و هو تلميذ إمام المحدثين الإمام البخاري و خريجه, و تأثر به أشد التأثر و لا سيما في فقه
+                الحديث و ناظره و ناقشه.
+                <br>
+                وقد سمع الترمذي من جملة من الأئمة منهم: الإمام مسلم بن الحجاج النيسابوري المعروف بالإمام مسلم ، الإمام
+                أبو داود السجستاني المعروف بأبي داود .
+                <br>
+                كما اشترك مع أقرانه الأئمة الخمسة أصحاب الكتب المعتمدة (الإمام البخاري ، الإمام مسلم ، الإمام أبو داود ،
+                الإمام النسائي ، الإمام ابن ماجة ) في تسعة شيوخ و هم: الشيخ محمد بن بشار بندار ، الشيخ محمد بن المثنى
+                أبو موسى ، الشيخ زياد بن يحي الحساني ، الشيخ عباس بن عبد العظيم العنبري ، الشيخ أبو سعيد الأشح عبد الله
+                بن سعيد الكندي ، الشيخ أبو حفص عمرو بن علي الفلاسي ، الشيخ يعقوب بن إبراهيم الدورقي ، الشيخ محمد بن معمر
+                القيسي البحراني و الشيخ نصر بن علي الجهضمي.
+                <br>
+                وقد أدرك الإمام أبو عيسى الترمذي شيوخا أقدم من هؤلاء و روى عنهم في كتابه الجامع منهم الشيخ عبد الله بن
+                معاوية
+                الجمحي ، الشيخ علي بن حجر المروزي ، الشيخ سويد بن نصر بن سويد المروزي ، الشيخ [[أبو رجاء قتيبة بن سعيد
+                الثقفي.
+            </p>
+
+
+            <p class="para3">للترمذي العديد من المؤلفات منها ما هو موجود نذكر:
+                <br>
+                الجامع للسنن و هو المؤلف الذي اشتهر به و مكنه من لقب الإمام ، و يعتبر كتاب العلل الصغرى ضمن كتاب الجامع
+                للسنن كمدخل له و جزء منه.
+                وقد قال الترمذي عن صحيحه:( صنفت هذا المسند الصحيح و عرضته على علماء الحجاز فرضوا به و عرضته على علماء
+                العراق فرضوا به, و عرضته على علماء خراسان فرضوا به و من كان في بيته هذا الكتاب فكأنما في بيته نبي ينطق )
+                <br>
+                كتاب الشمائل المحمدية .
+                ومنها ما هو مفقود مثل:
+                <br>
+                كتاب العلل الكبرى .
+                <br>
+                كتاب التفسير
+                <br>
+                كتاب التاريخ
+                <br>
+                كتاب الأسماء و الكنى
+                <br>
+
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+   
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

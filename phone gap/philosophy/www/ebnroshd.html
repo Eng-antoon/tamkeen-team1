@@ -1,0 +1,291 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png\ebnroshd.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">ابن رشد
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة: 14 أبريل 1126 ميلادية / 520 هجرية
+                <br>
+                مات سنة: 10 ديسمبر 1198 ميلادية / 595 هجرية
+
+        </p>
+
+        <p class="ma3loma">
+            هو أبو الوليد محمد بن أحمد بن محمد بن أحمد بن أحمد بن رشد, ولد بمدينة قرطبة بالأندلس, لأسرة ذات نفوذ علمى كبير حيث اشتهرت بالعلم والفقه, وكانت صاحبة سلطان قضائى ملحوظ حيث كان جَدُّه لأبيه قاضيًا لقرطبة. 
+            درس الشريعة على الطريقة الأشعرية, والفقه على المذهب المالكى - حيث كان هو المذهب السائد فى المغرب والأندلس - و تتلمذ الطب لأبى جعفر هارون وأبى مروان بن جربول البلنسى, و في الفلسفة والإلهيات لابن طفيل ودرس الرياضيات أيضًا و بجانب كل ذلك حفظ موطأ الإمام مالك وديوان المتنبى.
+            
+            كما برع في علم الكلام, والفقه, والأدب, واللغة, وبرز فى كل ذلك, حتى لم يكن له فى معظمها من معاصره نظير ولا قرين.
+    
+
+
+        </p>
+            
+
+
+            <p class="para">
+
+                <br>
+                 يذكر ابن أبى أصيبعة أن مؤلفات ابن رشد بلغت خمسن كتابًا، و لكن رينان يقول معتمدًا على مخطوط محفور فى خزانة الأسكوريال ، أنها ثمانية وسبعون كتابًا و رسالة. المطبوع منها قليل ، و لا يزال القسم الأكبر منها مخطوطًا ، و منها ما ضاع أصله العربى و لم يصل إلينا إلا فى ترجمة عبرية أو لاتينية وتنقسم إلى شروحات ومؤلفات. 
+                </br>
+                
+                
+            </p>
+
+            <p class="para2"> 
+
+                 عام 547هـ / 1153م دعاه عبدالمؤمن - أول الملوك الموحدين - إلي مراكش ليعاونه علي إنشاء معاهد العلم هناك. ثم اتصل بأبناء زُهر, من مشاهير الأطباء. و وضع بن الرشد كتابًا فى الطب اسماه الكليات و فى مراكش سنة 1916 ميلاديًا قدمه ابن طفيل إلى السلطان المستنير ابى يعقوب يوسف عبد المؤمن الذى كان ذا ثقافة واسعة و محبًا للعلم و أهله ، فكلف ابن الرشد بوضع الشروح و التفاسير على مؤلفات أرسطو؛ حتى تستقيمَ عبارتُها ، و تبرا مما لحقها من عيوب الترجمة و أخطاء الشُراح و المفسرين ، و لدفع الشك الذى يحوم حولها. فأكبَّ على دراسة أرسطو بكل جهد، و كان له علم سابق بفلسفته.
+                    و فى عام 564 هجريًا / 1169ميلاديًا عينه الخليفة قاضيًا فى مدينة إشبيلية ، ثم أصبح قاضى القضاة بقرطبة سنة 1171 ميلاديًا و بقى فى هذا المنصب مدة تزيد على العشر سنوات ، و تولى ابن رشد منصب ابن طفيل عندما تقدم فى السن كطبيب خاص للسلطان فى بلاط مراكش فى سنة 1182 ميلاديًا.
+                    و بعد وفاة أبى يعقوب يوسف سنة 579 هجريًا / 1184 ميلاديًا استمرت حظوته عند خلفه السلطان المنصور أبو يوسف يعقوب فلقى ما لقى على يدى والده من حظوةٍ و إكرام و أصبح فى فصل ذلك الزمان سلطان العقول و الأفكار ، لا رأى إلا رأيه و لا قول إلا قوله ، الأمر الذى أثار حسد الفقهاء و المتذمتين و حقدهم ؛ فرموه بالكفر و الزندقة، و استجوبه فقهاء قرطبة و قضاتها ، و قرروا أن تعاليمه كفر محط ، و لعنوا من يقرأها ، و قضوا على صاحبها بالنفى حيث نفى إلى مدينة اليسانة على مقربة من قرطبة مع عدد من المشتغلين بالحكمة و العلوم ، و أمر الخليفة بحرق كتب ابن رشد و سائر كتب الفلسفة ، و حظر على الناس يومئذ الإشتغتال يومئذ بالفلسفة و العلوم العملية جملة و النظر فيما سوى الطب و علم النجوم وعلم الحساب.
+                    و لما كان الخليفة المنصورفى حرب مع الفونس التاسع ، ملك قشتالة ، كان بحاجة إلى رضا الشعب و مؤازرته ، لذلك اتخذ هذا الموقف العدائى من ابن رشد ، ثم إن نقمة الخليفة على ابن رشد كانت إرضاءًا لأخصامه ، و ذلك ان النقمة اقتصرت على النفى دون الإعدام و بعدما عاد الخليفة إلى مراكش عفا عن بن رشد وعادت حظوته لدى السلطان، و مكانته فى البلاط المغربى ، و مكانة الفلسفة والعلوم العقلية فى البلاد، و لكن هذه النكبة كانت قد  اثرت تأثيرًا عميقًا فى ابن رشد فوافته المنية فى أول دولة السلطان الناصر إذ توفى فى مراكش و نُقلت رفاته إلى قرطبة حيث توجد مدافن عائلته. 
+                    
+            </p>
+            <p class="para3">....... مقولات</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

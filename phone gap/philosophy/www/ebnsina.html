@@ -1,0 +1,438 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+        direction: rtl;
+        color: white;
+        width: 110%;
+        font-family: Amiri;
+        font-size: 19px;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+        direction: rtl;
+        color: white;
+        font-family: Amiri;
+        font-size: 20px;
+        width: 108%;
+        background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123" onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/ebnsina.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">ابن سينا
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة:980
+                <br>
+                مات سنة:1037
+                <br>
+                <p class="ma3loma" style="font-weight:bolder;">
+                    ابن سينا هو علي الحسين بن عبد الله بن الحسن بن علي بن سينا، عالم وطبيب بخاري، اشتهر بالطب والفلسفة
+                    واشتغل بهما. ولد في قرية أفشنة بالقرب من بخارى (في أوزبكستان حالياً) من أب من مدينة بلخ (في
+                    أفغانستان حالياً) وأم قروية. ولد سنة 370 هـ (980م) وتوفي في همدان (في إيران حاليا) سنة 427 هـ
+                    (1037م). عُرف باسم الشيخ الرئيس وسماه الغربيون بأمير الأطباء وأبو الطب الحديث في العصور الوسطى. وقد
+                    ألّف 200 كتابا في مواضيع مختلفة، العديد منها يركّز على الفلسفة والطب. ويعد ابن سينا من أول من كتب عن
+                    الطبّ في العالم ولقد اتبع نهج أو أسلوب أبقراط وجالينوس. وأشهر أعماله كتاب القانون في الطب الذي ظل
+                    لسبعة قرون متوالية المرجع الرئيسي في علم الطب، وبقي كتابه (القانون في الطب) العمدة في تعليم هذا
+                    الفنِّ حتى أواسط القرن السابع عشر في جامعات أوروبا ويُعد ابن سينا أوَّل من وصف التهاب السَّحايا
+                    الأوَّليِّ وصفًا صحيحًا، ووصف أسباب اليرقان , ووصف أعراض حصى المثانة، وانتبه إلى أثر المعالجة
+                    النفسانية في الشفاء.
+                    <br>
+                    ولد في قرية افشنا قريبة من بخارى في أوزبكستان الحالية - من أب بلخي -في أفغانستان الحالية. كان والده
+                    كاتباً من دعاة الإسماعيلية وكان شخصية ذات منصب في دولة السامانيين وأرسله إلي مدرسة بخارى ليدرس هناك
+                    جيدا. كان أخوه ووالدته متأثرين بالإسماعيلية، لكن لم يتبعهما ابن سينا.رحل إلى مدينة بُخارى وهناك
+                    التحق ببلاط السلطان نوح بن منصور الساماني، الذي اسند إليه متابعة الأعمال المالية للسلطان.
+                    <br>
+                    في بخارى بدأ ابن سينا رحلة تلقي العلوم, حيث حفظ القرآن بأكمله وعمره لم يتجاوز العاشرة، ثم تلقي علوم
+                    الفقه والأدب والفلسفة والطب. ويُذكر أن ابن سينا درس على يد عالم بُخاري متخصص بعلوم الفلسفة والمنطق
+                    اسمه "أبو عبد الله النائلي" وهو من الفلاسفة، فأحسن إليه والده واستضافه وطلب إليه أن يلقِن ابنه شيئا
+                    من علومه، فما كان من هذا العالم إلا أن تفرَغ لتلميذه، وأخذ عليه دروساً من كتاب المدخل إلى علم المنطق
+                    المعروف باسم «إيساغوجي».
+                    <br>
+                    وكان النائلي اشد ما يكون إعجاباً من تلميذه " ابن سينا " حين وجده يجيب على الأسئلة المنطقية المحورية
+                    إجابات صائبة تكاد لا تخطر على بال معلمه. واستمر ابن سينا مع معلمه إلى أن غادر هذا المعلم بلدة بخارى.
+                    بدأ نبوغ ابن سينا منذ صغره, إذ يحكي أنه قام وهو لم يتجاوز الثامنة عشر بعلاج السلطان نوح بن منصور
+                    الساماني، وكانت هذه هي الفرصة الذهبية التي سمحت لابن سينا بالالتحاق، ببلاط السلطان ووضعت مكتبته
+                    الخاصة تحت تصرف ابن سينا.
+                    <br>
+                    في حديث لابن سينا وهو يترجم سيرته الذاتية التي رواها تلميذه أبو عبيدة الجوزجاني حديث نشأته فيقول «إن
+                    أبي كان رجلاً من أهل (بلخ) وأنتقل إلى (بخارى)في أيام (نوح بن منصور) وأشتغل بالتصرف وتولى العمل في
+                    أثناء أيامه بقرية يقال لها : (خرميشن) من ضياع بخارى وهي من أمهات القرى، وبقربها قرية يقال لها :
+                    أفشنة، وتزوج أبي منها بوالدتي، وقطن بها وسكنها وولدت له بها، وولد أخي ثم انتقلنا إلى بخارى وأحضرت
+                    معلم القرآن، ومعلم الأدب، وأكملت العشر من العمر، وقد أتعبت على القرآن، وعلى كثير من الأدب، حتى كان
+                    يقضي مني العجب...»
+
+                </p>
+            </p>
+
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في العلوم الالية
+            </p>
+            
+            <p class="para">
+                كتب المنطق، وما يلحق بها من كتب اللغة والشعر والعلوم والطب، ومن آثاره اللغوية.
+
+            </p>
+
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في العلوم النظرية
+            </p>
+           
+            <p class="para">
+                كتب العلم الكلّي، والعلم الإلهي، والعلم الرياضي، والطب النفسي
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في العلوم العملية
+            </p>
+            
+            <p class="para">
+                كتب الأخلاق، وتدبير المنزل، وتدبير المدينة، والتشريع.
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في الرياضيات</p>
+            
+            <p class="para">
+                مختصر اقليدس
+                <br>
+                مختصر المجسطي
+                <br>
+                مختصر علم الهيئة
+                <br>
+                مختصر الارتماطيقي
+                <br>
+                رسالة الزاوية
+                <br>
+                رسالة في بيان علّة قيام الأرض في وسط السماء، طبعت في مجموع (جامع البدائع)، في القاهرة سنة 1917
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في الطبيعيات
+                وتوابعها</p>
+           
+            <p class="para">
+                رسالة في إبطال أحكام النجوم
+                <br>
+                رسالة في الأجرام العلوية وأسباب البرق والرعد
+                <br>
+                رسالة في الفضاء
+                <br>
+                رسالة في النبات والحيوان
+                <br>
+                قانون الحركة الأول "الجسم الساكن يبقى ساكنا والجسم المتحرك يبقى متحركا مالم تؤثر عليه قوة خارجية"والذي
+                نسبه لنفسه إسحاق نيوتن.
+                
+
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في الطب</p>
+            
+            <p class="para">
+                كتاب القانون في الطب الذي ترجم وطبع عدّة مرات والذي ظل يُدرس في جامعات أوروبا حتى أواخر القرن التاسع
+                عشر.
+                <br>
+                كتاب الأدوية القلبية
+                <br>
+                كتاب دفع المضار الكلية عن الأبدان الإنسانية
+                <br>
+                كتاب القولنج
+                <br>
+                رسالة في سياسة البدن وفضائل الشراب
+                <br>
+                رسالة في تشريح الأعضاء
+                <br>
+                رسالة في الفصد
+                <br>
+                رسالة في الأغذية والأدوية
+               
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">أراجيز طبية</p>
+          
+            <p class="para">
+                أرجوزة في التشريح
+                <br>
+                أرجوزة المجربات في الطب
+                <br>
+                الألفية الطبية المشهورة التي ترجمت وطبعت
+                <br>
+                لإبن سينا باع في الشعر العربي وله ديوان منشور ويمكن الإطلاع على ديونه من هنا ديوان ابن سينا في بوابة
+                الشعراء
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في الموسيقى</p>
+            
+            <p class="para">
+                مقالة جوامع علم الموسيقى
+                <br>
+
+                مقالة في الموسيقى
+                <br>
+                ومقالات أخرى.
+            </p>
+
+            <p class="para2">
+                ابن سينا كان متوقد الذكاء، امتاز بمواهبه الفذة، وعبقريته الأهابة في تعلم القرآن والأدب وهو ابن عشر سنين
+                وتعلم حساب الهند، واشتغل بالفقه وتردد على إسماعيل الزاهد، حتى ألف طرق المطالبة ووجوه الاعتراض على المجيب
+                على الوجه الذي جرت عادة القوم به، ثم ابتدأ كتاب إيساغوجي على الناتلي وأحكم المنطق، و كتاب إقليدس، وانتقل
+                إلى المجسطي، قرأها جميعاً على نفسه، وفهمها، وأستمر على طريقته يعلم نفسه ويثقفها، ويقول : «وصارت أبواب
+                العلوم تتفتح علي، ثم رغبت في علم الطب، وصرت اقرأ الكتب المصنفة فيه، وعلم الطب ليس من الأمور الصعبة، فلا
+                جرم أني برّزت فيه في أقل مدة... وتعهدت المرضى، فانفتح علي من أبواب المعالجات من التجربة ما لا يوصف».
+                <br>
+                لقد كان الشيخ الرئيس متفائلاً في جميع مراحل حياته يعتقد أن العالم الذي نعيش فيه أحسن العوالم الممكنة
+                وكان شديد الارتباط بموطنه الأصلي، فهو لم يغادر موطنة رغم اضطراب حياته فيها، وهو بذلك يخالف أبو نصر محمد
+                الفارابي (الذي كان يجول البلاد دون التقيد بأي رابطة طبيعية أو اجتماعية).
+                <br>
+                يعتبر الفكر الفلسفي لأبي علي ابن سينا امتداداً لفكر الفارابي وقد أخذ عن الفارابي فلسفته الطبيعية وفلسفته
+                الإلهية أي تصوره للموجودات وتصوره للوجود وأخذ منه على الأخص نظرية الصدور وطوّر نظرية النفس وهو أكثر ما
+                عني به. كما صاغ برهان الصديقين الشهير في إثبات وجود الله. يدعي مخالفوه أنه كان يقول بنفس المبادئ التي
+                كان الفارابي من قبله ينادى بها بأن العالم قديم أزلي وغير مخلوق، وأن الله يعلم الكليات لا الجزئيات، ونفى
+                أن الأجسام تقوم مع الأرواح في يوم القيامة.
+                <br>
+                أهمية ابن سينا الفلسفية تكمن في نظريته في النفس وأفكاره في فلسفة النفس، مقدمات ابن سينا في النفس هي
+                مقدمات أرسطية. تعريف ابن سينا للنفس: النفس كمال أول لجسم طبيعي آلي ذي حياة بالقوة أي من جهة ما يتولد
+                (وهذا مبدأ القوة المولدة) ويربو (وهذا مبدأ القوة المنمية) ويتغذى (وهذا مبدأ القوة الغاذية) وذلك كله ما
+                يسميه بالنفس النباتية. وهي كمال أول من جهة ما يدرك الجزئيات ويتحرك بالإرادة وهذا ما يسميه بالنفس
+                الحيوانية. وهي كمال أول من جهة ما يدرك الكليات ويعقل بالاختيار الفكري وهذا ما يسميه النفس الإنسانية.
+                <br>
+            </p>
+
+
+
+            <p class="para3">المستعد للشيء تكفيه أضعف أسبابه.
+                
+                الوهم نصف الداء، والاطمئنان نصف الدواء، والصبر أول خطوات الشفاء
+                <br>
+                <br>
+                احذروا البطنة، فإن أكثر العلل إنما تتولد من فضول الطعام
+                <br>
+                <br>
+                العقل البشري قوة من قوى النفس لا يستهان بها
+                <br>
+                <br>
+                النفس كمال أول لجسم طبيعي آلي ذي حياة بالقوة أي من جهة ما يتولد ويربو ويتغذى
+                
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

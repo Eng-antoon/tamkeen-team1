@@ -1,0 +1,310 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/galal el deen.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                onclick="closeNav()"> جلال الدين الرومي
+                </h1>
+            </div>
+
+        
+            <p class="ma3loma">
+                ولد :  30 سبتمبر 1207 ميلادية / 6 ربيع الأول 604 هجرية  وهو الرأى الشائع ويوجد نقاش طويل حول هذا التاريخ. فيقول "ول ديورانت":  "إن تاريخ ميلاده هو عام 1201م"بينما يتوقع  "موريس بارس" أن تاريخ ميلاده هو 1203م  ومن ناحية أخري يرى الكاتب التركي "كول بِنارْلي" أن تاريخ ميلاده هو (580هـ / 1244م). ويرى "هلموت رتر" وغيره من الباحثين غير هذا الرأى.
+
+                <br>
+                مات سنة: 17 ديسمبر 1273 ميلادية بعمر السادسة والستين عامًا (66 سنة). 
+            </p>
+
+
+
+        <p class="ma3loma">
+            ينتسب جلال الدين الرومي إلي عائلة عريقة في العلم والحكمة؛ فقد كان والده "بهاء الدين وَلَد" من أشهر علماء المدينة ومن المتصوفة المعروفين، حيث لُقّب بـ"سلطان العلماء". ويَذكر "سِبَهسالار" (أول مَن كتب مناقب هذه العائلة) أن "بهاء الدين ولد"، الذى ينحدر من سلسلة الطريقة الصوفية التى تنتهى إلى " أحمد الغزالى "، كان من مريدى "نجم الدين الكبرى" الذى رفض الهروب من المدينة عند إستيلاء المغول عليها، بل قاتل هو ومريدوه الغزاةَ بكل بسالة حتى الإستشهاد.
+            <br>
+            يقول "أفلاكى" ـ الذى يتسم أسلوبه بالمبالغة عند كلامه عن عائلة الرومى ـ : إن بهاء الدين ولد، ينتسب من جهة الأم إلى "علاء الدين محمد خوارزم شاه" فهو حفيده. و لكن هذه المعلومة غيرموجودة فى المصادر الأخرى، إذا قد تكون خيالية.
+            <br>
+            لا نجد فى مؤلفات الرومى أىّ معلومات مؤكدة عن نسبه، بينما يذكر "سِبَنهسالار" و "أفلاكى" أن نسب والده "بهاء الدين ولد" يتصل بأبى بكر الصديق .
+
+
+        </p>
+
+
+            <p class="para">
+                    المثنوي
+                    <br>
+                    فيه ما فيه
+                    <br>
+                    الديوان الكبير أو ديوان شمس تبريزي
+                    <br>
+                    المجالس السبعة
+            </p>
+
+            <p class="para2"> 
+                ولد جلال الدين الرومى فى أسرة عريقة و نشأ فى بيئة طيبة مثقفة، حيث تتلمذ على يد والده فتلقى منه نور العلم والعرفان ثم تتلمذ من بعده على يد بعض من مريدى والده المشهود لهم بالعلم و المعرفة. وحسب التقاليد التى كانت مرعية آنذاك فقد تم تخصيص مريدَين اثنين لتعليمه و تنشأته، كان أحدهما "شرف الدين لَالَه السمرقندى" الذى أصبح فيما بعدُ ( أبا زوجته )، و الآخر هو "سيد برهان الدين" الذى أصبح مرشدَه الأول بعد وفاة والده.
+                و النصوص الموجودة فى المراجع عن هذه الفترة من حياة الرومى هى عبارة عن مناقب فقط، فمثلاً يقل أفلاكى: إنه فى طفولته شاهد و تباحث مع رَوحانيين، و أنه صعد إلى مِعراج معنوى و هو فوق كتف مرشدَه برهان الدين ..... إلى غيرها من الحكايات و المناقب.
+            <br>
+            بعد موت أبيه بهاء الدين ولد حل محله فى الإفتاء و التعليم حتى ظهور أكبر المؤثرين فيه شمس الدين التبريزى ، فقد كانت المرحلة قبل شمس مرحلة العقل أما بعد ذلك فهى مرحلة العشق.
+            </p>
+            <p class="para3">
+                مَنْ لا يركض إلى فتنة العشق يمشي طريقاً لا شيء فيه حي
+                <br>
+                إنك قد رأيت الصورة ولكنك غفلت عن المعنى .
+                <br>
+                هكذا أود أن أموت في العشق الذي أكنه لك ، كقطع سحب تذوب في ضوء الشمس .
+                <br>
+                ارتق بمستوى حديثك لا بمستوى صوتك ، فالمطر الذي ينميّ الأزهار وليس الرعد .
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+
+
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+
+        x.toggle();
+
+    }
+    $("#but2").click(HandleClick1);
+
+    var y = $(".para2");
+
+
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+
+        y.toggle();
+
+    }
+    $("#but3").click(HandleClick2);
+
+
+    var z = $(".para3");
+
+
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+
+        z.toggle();
+
+    }
+    $("#but4").click(HandleClick3);
+
+</script>
+
+</html>

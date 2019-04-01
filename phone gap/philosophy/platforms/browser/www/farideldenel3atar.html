@@ -1,0 +1,296 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/fareed el den al 3atar.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">فريد الدين العطار
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة:1145 
+                <br>
+                مات سنة:1220
+           
+            </p>
+
+            <p class="ma3loma">
+                    
+                    وُلد فريد الدين العطار قرب معشوقة عمر الخيّام: نيشابور و قد أورثه والده صيدلية و الأولى أجزخانة ، و هو أحد الأسباب التى جعلته يحمل لقب العطار و يرتدى سمت -أى:علامة-  الصوفيين. و تُروَج حكايات كثيرة للغاية حول سيرته، بعضها ينطوى على خوارق و معجزات، و بعضها الآخر يضم تعاليمه.
+
+            </p>
+            
+                
+                    <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);"> تذكرة الأولياء </p>
+                    <p class="para">
+                          كان العطار واحدًا من الصوفيين المتضلعين بعمق فى سِيَر الصوفيين التاريخيين الأوائل، و يُفرد هذا العمل النثرى الوحيد لمجموعة من هذه السير الحياتية. و كان قد إتخذ قراره بإعداد هذه المجموعة خلال تجواله فى الطريق إلى مكة و أماكن أخرى بعد تركه للدائرة الصوفية التى كانت تتحلَّق حول ركن الدين.
+                         <br>
+
+                         <br>
+                    <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);"> منطق الطير </p>
+                    <p class="para">
+
+                        	م  عبارة عن منظومةٌ رمزية تبلغ 4500 بيت، موضوعها هو بحث الطيور عن الطائر الوهمى المعروف   بسيمورغ والطيور هنا ترمز إلي السالكين من أهل الصوفية، وأما السيمورغ فترمز إلي الله. تبدأ المنظومة كما هو العادة بجملة من المدائح في حمد الله ومدح الرسول والخلفاء الراشدين الأربعة. والجزء المتعلق بالحكاية نفسها يبدأ بالبيت 500 من المنظومة نفسها وهو يشتمل علي خمسة وأربعين مقالاً تنتهي بخاتمة. وتبدأ القصة بتوجيه الخطاب والترحيب بثلاثة عشر طائراً ينعقد بهم المجلس، فيقررون أنه لا بد لهم من أن يخضعوا أنفسهم لواحد منهم يجعلونه مرشداً لهم أثناء بحثهم عن السيمورغ حتي يوفقوا إلي العثور عليه. ثم يختارون الهدهد ويأخذ الهدهد في مخاطبتهم بحديث طويل. 
+
+            </p>
+
+            <p class="para2">
+                    تُورد دولت شاه فى كتابها الكلاسيكى "ذكريات الشعراء"، قصة تحوُّل العطار إلى إعتناق الصوفية، تلك التى يستخدمها الصوفيون فى تجسيد الحاجة الماسة إلى توازن ما هو مادى و ما هو ميتافيزيقى. غير أننا لا نستطسع حمل هذه القصة محمل السرد الحرفى للوقائع، فهى فى الحقيقة قصة من النوع الرمزى. كان العطار موجودًا فى دكانه ذات يوم وسط بضائعه الكثيرة و المتنوعة عندما ظهر أحد الصوفيين قُرب الباب، و أخذ يُحدِّق بعينين مملوءتين بالدموع. و سُرعان ما طلب العطار من الرجل أن يمضى لحال سبيله. فقال الرجل و كان مُسافرًا : " ليس فى الأمر أىِّ مَشقة بالنسبة إلىَّ. فليس معى أى حُمول، اللهم سوى هذا المعطف. و لكنك أنت، أنت بعقاقيرك الغالية هذه، سيتعيَّن عليك أن تحسب حسابًا طويلاً لترتيباتك إذا كان لك أن تمضى فى سبيلك ". 
+                    <br>
+
+                    تأثرالعطار بعمق هذه العبارات حتى إنه هجر دكانه و عمله، و انسحب إلى أحد المقار الصوفية فى خلوة دينية تحت رعاية القطب الصوفى الكبير ركن الدين. و بينما انخرط فى أداء طقوسه الجمالية، حافظ على عظمة الجسم الإنسانى، بل وصل به الأمر حد القول: " الجسم ليس مختلفًاعن الروح فهو جزء لا يتجزَّأ منها، وهما يُشكلان معًا جزءًا من الكل ". غير أن تعاليم "العطار" ليست مجسَّدة و حسب فى أعماله الشعرية، بل أيضًا فى الشعائر التقليدية التى يعتقد الصوفيون أنها تشكٍّل جزءًا منها.
+                    <br>
+
+                    و عندما طَعن العطار فى السن زاره جلال الدين الرومى الذى كان شابًا يافعًا آنذلك. و أهداه أحد كتبه وهو منطق الطير.و قد أذاع الرومى على نطاقٍ أوسع المظاهر التأهيلية للحكمة الصوفية التى كان العطار يسير وفقها. و فى وقتٍ لاحق كان يشير إليه بإعتباره روحه الحقة : " لقد عبر العطار مدائن الحب السبع بينما لم نتجاوز نحن شارعًا واحدً ". 
+                    <br>
+                    تُوفى العطار، تمامًا مثلما عاش، وهو يُعلِّم. و كان العمل الأخير الذى صدر عنه، محسوبًا بصورة عمدية، كى يجعل المرء يفكِّر لنفسه. فعندما غزا البرابرة تحت إمرة جنكيز خان فارس فى 1220 ، وقع العطار الذى كان قد بلغ من العمر آنذاك مائة سنة وعشر فى الأسر. و عندما قال أحد المغول : " لا تقتلوا هذا العجوز. و لسوف أدفع ألف قطعة من الفضة فدية له "، قال العطار لآسره أن يكِن – أى: يقبض – يده، فقد يحصل على ثمن أعلى من شخصٍ آخر. ولم يكد يمر وقت قصير وعرض أحدهم حفنة من القش نظيره. فنصح العطار الآسر على هذا النحو بمعنى مقابل حفنة قش، فأنا لا أساوى أكثر من ذلك. و عندئذٍ ذبحه المغولى فى ثورة الغضب التى إجتاحته. 
+
+
+
+            </p>
+            <p class="para3">....... مقولات</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>

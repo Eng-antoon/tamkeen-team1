@@ -1,0 +1,358 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script type="text/javascript" src="cordova.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-position-x: center;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(182, 85, 0, 0.596);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    .ma3loma {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        direction: rtl;
+        background-color: rgba(136, 69, 11, 0.43);
+        width: 110%;
+    }
+
+    .para {
+        display: flex;
+    direction: rtl;
+    color: white;
+    width: 110%;
+    font-family: Amiri;
+    font-size: 19px;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para2 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    .para3 {
+        display: flex;
+    direction: rtl;
+    color: white;
+    font-family: Amiri;
+    font-size: 20px;
+    width: 108%;
+    background-color: rgba(136, 69, 11, 0.43);
+    }
+
+    #but-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgcontain {
+        display: flex;
+        flex-direction: row;
+        direction: ltr;
+        align-content: end;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img1 {
+        width: 37%;
+        height: 19%;
+        margin-right: 10%;
+        border: 2px solid rgba(129, 77, 30, 0.774);
+        background-color: rgba(182, 85, 0, 0.596);
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 1%;
+    }
+
+    #pageborder {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    #sidenav123 {
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        direction: rtl;
+
+
+    }
+</style>
+
+<body background=" images/background.jpg">
+    <div id="pageborder">
+        <!-- hna dy al 3lama bta3et al side menu -->
+
+        <span id="sidenav123"  onclick="openNav()">&#9776; </span>
+        <!--dy al awamr bta3et al side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="but1" onclick="closeNav()"
+                style="font-size:30px;font-family: Tajawal;margin-bottom: 23px; margin-top: 45px; background-color: rgba(136, 69, 11, 0.43);">نشأته
+            </a>
+            <a id="but2" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(117, 61, 12, 0.43);">اهم
+                اعماله</a>
+            <a id="but3" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);">
+                حياته</a>
+            <a id="but4" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px;background-color: rgba(136, 69, 11, 0.43);">مقولات</a>
+            <a id="but5" onclick="closeNav()"
+                style="font-size: 30px;font-family: Tajawal;margin-bottom: 23px; background-color: rgba(136, 69, 11, 0.43);"
+                href="firstpage.html">الصفحة الرئيسية</a>
+
+        </div>
+
+        <!-- a7na hna 3mlna div gded 3shan ndelo amr ano y2fl al side menu lma ydos fe ay 7ta fe al shasha-->
+        <!---->
+        <div onclick="closeNav()" style="    height: 100%;
+    width: 95%;">
+            <!---->
+            <div id="imgcontain">
+                <img id="img1" src="png/faraby.png">
+                <h1 style="font-size: 30px;margin-top:77px;display: flex; align-items:center;justify-content: center; font-family: Tajawal; color :white;"
+                    onclick="closeNav()">أبو نصر محمد الفارابي
+                </h1>
+            </div>
+
+            <!--    <div class="ma3loma" >
+            <h2 class="title">ولد سنة : </h2>
+            <h2 class="title" id="mila">1685</h2>
+        </div>
+     <div class="ma3loma">
+            <h2 class="title">توفي سنة : </h2>
+            <h2 class="title" id="wafa"> 1753</h2>
+        </div>-->
+            <p class="ma3loma">
+                ولد سنة:1058
+                <br>
+                مات سنة:1111
+                <br>
+                <p class="ma3loma" style="font-weight:bolder;">
+                        أبو نصر محمد الفارابي هو أبو نصر محمد بن محمد بن أوزلغ بن طرخان الفارابي. ولد عام 260 هـ/874 م في فاراب في إقليمتركستان (كازاخستان حاليًا) وتوفي عام 339 هـ/950م. فيلسوف مسلم اشتهر بإتقان العلوم الحكمية وكانت له قوة في صناعةالطب.
+                        <br>
+                        ولد الفارابي في مدينة فاراب، ولهذا اشتهر باسمه. نسبة إلى المدينة التي عاش فيها. كان أبوه قائد جيش، وكان ببغداد مدة ثم انتقل إلىسوريا وتجول بين البلدان وعاد إلى مدينة دمشق واستقر بها إلى حين وفاته. يعود الفضل إليه في إدخال مفهوم الفراغ إلى علم الفيزياء. تأثر به كل من ابن سينا وابن رشد.
+                        <br>
+
+                        تنقل في أنحاء البلاد وفي سوريا، قصد حلب وأقام في بلاط سيف الدولة الحمداني فترة ثم ذهب لدمشق وأقام فيها حتى وفاته عن عمر يناهز 80 عامًا ودفن في دمشق، ووضع عدة مصنفات وكان أشهرها كتاب حصر فيه أنواع وأصناف العلوم ويحمل هذا الكتاب اسم إحصاء العلوم.
+                        <br>
+                        سمي الفارابي "المعلم الثاني" نسبة للمعلم الأول أرسطو والإطلاق بسبب اهتمامه بالمنطق لأن الفارابي هو شارح مؤلفات أرسطو المنطقية.
+                        <br>
+                        
+
+                </p>
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في العلوم</p>
+            <p class="para">
+
+                    إحصاء العلوم والتعريف بأغراضها
+            </p>
+
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في التصنيف</p>
+            <p class="para">
+
+                  
+                كتاب «المقولات» (قاطيغورياس)
+                <br>
+                كتاب «القول الشارح» (القضايا والتعريف)
+                <br>
+                كتاب «أنا لوطيقا الأولى والثانية» (تأليف القياس المنطقي)
+                <br>
+                كتاب «طوبيقا» (الجدل)
+                <br>
+                كتاب «سفسطيا» (السفسطة)
+                <br>
+            	كتاب «ريطوريقا» (الخطابة)
+            <br>
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في المنطق</p>
+            <p class="para">
+
+                 
+        كتاب «الأخلاق إلى نيقوماخوس»
+        <br>
+        كتاب «العلم الطبيعي»
+        <br>
+        كتاب «الآثار العلوية»
+        <br>
+        رسالة «النفس والعالم»
+        <br>
+    
+            </p>
+            <p class="para" style="font-weight:bold; font-size: 25px;     color: rgb(255, 231, 206);">في الفلسفة</p>
+            <p class="para">
+
+                    كتاب «الجمع بين رأي الحكيمين» 
+                    <br>
+                    كتاب «الخرافة الكبير»
+                    <br>
+                    كتاب «الواحد والوحدة»
+                    <br>
+                    كتاب «الجوهر»
+                    <br>
+                    كتاب «الزمان»
+                    <br>
+                    كتاب «المكان»
+                    <br>
+                    كتاب «الخلاء»
+                    <br>
+                    كتاب «العقل والمعقول»
+                    <br>
+                    كتاب «التوطئة في المنطق»
+                    <br>
+                    كتاب «منطق الفارابي»
+                    <br>
+            </p>
+
+
+
+
+
+            
+
+            <p class="para2">
+                    عكف في مسقط رأسه على دراسة طائفة من مواد العلوم والرياضياتوالآداب والفلسفة واللغات وعلى الأخص التركية وهي لغته الأصلية بجانب معرفته للغات العربية والفارسية واليونانية.
+                    <br>
+
+                    ثم خرج من بلده حوالي سنة 310 هـ، وهو يومئذ يناهز الخمسين، قاصداً العراق، حيث أتم دراساته. فيما بدأ فيه في مسقط رأسه وأضاف إليه مواد أخرى كثيرة، فدرس في حرّان الفلسفة والمنطق والطبعلى الطبيب المنطقي المسيحي يوحنا بن حيلان، ودرس في بغدادالفلسفة والمنطق على أبي بشر متى بن يونس، وهو مسيحي كان حينئذ من أشهر مترجمي الكتب اليونانية ومن أشهر الباحثين في المنطق، ودرس في بغداد كذلك العلوم اللسانية العربية على ابن السراج، وأتيح له فيها أيضاً دراسة الموسيقى وإتمام دراساته في اللغات والطبوالعلوم والرياضيات، ولا غرابة أن يتتلمذ في هذه السن المتقدمة، فقد كان دأب العلماء في هذه العصور، يطلبون العلم من المهد إلى اللحداللحد كان الفارابي مولعاً بالأسفار في طلب العلم ونشره والإحاطة بشئون الجماعات، فانتقل من العراق إلى الشام حوالي سنة 330 هـ حيث اتصلبسيف الدولة بن حمدان الذي عرف له فضله، وأكرم وفادته، وعاش في كنفه منقطعاً إلى التعليم والتأليف، وكان في أثناء إقامته بالشام يتنقل بين مدنها وخاصة بين حلب (عاصمة الحمدانيين) ودمشق التي كانت في حوزتهم تارة وتخرج أخرى، وقد سافر مرة من الشام إلى مصر، وكان ذلك على الراجح سنة 338 هـ ثم رجع منها إلى دمشق حيث توفي سنة 339 هـ
+                    <br>
+                    وقد آثر الفارابي حياة الزهد والتقشف فلم يتزوج، ولم يقتن مالاً، ولم يشأ أن يتناول من سيف الدولة إلى أربعة دراهم في اليوم - كما يذكر كثير من الرواة - ينفقها فيما احتاج إليه من ضروري العيش، وقد اكتفى بذلك قناعة منه، وكان في استطاعته وهو الأثير عند الملك الجوادسيف الدولة بن حمدان أن يكتنز الذهب والفضة ويقتني الضياع، ويروى أنه قد بلغ به التقشف أنه كان يسهر الليل للمطالعة والتصنيف مستضيئاً بقنديل الحارس، لأنه لم يكن يملك قنديلا خاصاً، وأنه قد بقي على ذلك أمداً طويلا 
+                    <br>
+                    وكان يؤثر العزلة والوحدة ليخلو إلى التأمل والتفكير، وكان طول مدة إقامته بدمشق، كما يقول ابن خلكان في «وفيات الأعيان» يقضي معظم أوقاته في البساتين وعلى شواطئ الأنهار، فلا يكون إلا عند مشتبك رياض، حيث يؤلف بحوثه ويقصد إليه تلاميذه ومساعدوه
+                    <br>
+                </p>
+            <p class="para3">
+                
+                ”واجب الوجود عقل محض، يعقل ذاته بذاته، فهو عاقل ومعقول في آن واحد.“
+                <br>
+
+                فما الدار دار خـلـود لنا ولا المرء في الأرض بالمعجز“
+<br>
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    //dy al function bta3t fat7 al side menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    //dy al function bta3et afl al side menu
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //hna byndah 3la al tare5 we al youm
+    var f = $(".ma3loma");
+    
+    function HandleClick() {
+        y.hide();
+        z.hide();
+        x.hide();
+        f.toggle();
+    }
+    $("#but1").click(HandleClick);
+    var x = $(".para");
+    x.hide();
+    function HandleClick1() {
+        y.hide();
+        f.hide();
+        z.hide();
+        x.toggle();
+    }
+    $("#but2").click(HandleClick1);
+    var y = $(".para2");
+    y.hide();
+    function HandleClick2() {
+        z.hide();
+        f.hide();
+        x.hide();
+        y.toggle();
+    }
+    $("#but3").click(HandleClick2);
+    var z = $(".para3");
+    z.hide();
+    function HandleClick3() {
+        y.hide();
+        f.hide();
+        x.hide();
+        z.toggle();
+    }
+    $("#but4").click(HandleClick3);
+</script>
+
+</html>
